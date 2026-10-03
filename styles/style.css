@@ -1,0 +1,66 @@
+
+ header {
+    width: 1920PX;
+    min-height: 128px;
+    background: #4EA487;
+}
+
+.navbar {
+    max-width: 561px;
+    min-height: 128px;
+    display:flex;
+    padding-left: 140px;
+    gap: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    display: block;
+    width: 72px;
+    height: 72px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 48px; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    position: relative;
+    color: #F8F5EB;
+    text-decoration: none;
+}
+
+/* Welle beim Darüberfahren */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    right: -3px;
+    bottom: -7px;
+    height: 9px;
+    border-bottom: 3px solid #F1C953;
+    border-radius: 50%;
+    transform: rotate(-2deg) scaleX(0);
+    transform-origin: left;
+}
+
+.navbar a:hover::after {
+    transform: rotate(-2deg) scaleX(1);
+}
+
+/* Gelb nur während des Klickens; ohne Welle */
+.navbar a:active {
+    color: #F1C953;
+}
+
+.navbar a:active::after {
+    transform: scaleX(0);
+}
+
