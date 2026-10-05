@@ -69,7 +69,11 @@
     text-align: center;
 }
 
-/* Icon */
+/*.highlight-section{
+
+}
+
+/* Icon für Highligths*/
 .icon {
     width: 100%;
     display: flex;
@@ -84,66 +88,68 @@
     margin-left: 42px;
 }
 
-
-/* Slider */
-.slider_a{
+/* Slider mit Bildern */
+.slider_a {
     position: relative;
-    background-color: greenyellow;
-
     width: 250px;
     height: 150px;
-
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
     overflow: hidden;
 }
 
-.slider_a input{
-    z-index: 2;
-}
-
-.slider_a_wrapper{
-    z-index: 1;
-
-    width: 300%;
+.slider_a_wrapper {
+    width: 400%;
     height: 100%;
-
     position: absolute;
     display: flex;
-
-    transform: all 255ms ease-in-out;
+    transition: transform 255ms ease-in-out;
 }
 
-.slider_a_element{
-    width: calc(100% / 4);
+.slider_a_element {
+    flex: 0 0 25%;
     height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.element_one, .element_two, .element_three, .element_four {
-    image-orientation: from-image;
+/* Verknüpfung der Bilder zum Slider */
+.element_one {
+    background-image: url("../img/web/carousel01/header/photo1.png");
 }
 
-.slider_a input[value="one"]:checked~.slider_a_wrapper{
-    transform: translate(calc(100% / 4));
-
+.element_two {
+    background-image: url("../img/web/carousel01/header/photo2.png");
 }
 
-.slider_a input[value="two"]:checked~.slider_a_wrapper{
-    transform: translate(calc(0 / 4));
-    
+.element_three {
+    background-image: url("../img/web/carousel01/header/photo3.png");
 }
 
-.slider_a input[value="three"]:checked~.slider_a_wrapper{
-    transform: translate(calc(-100% / 4));
-    
+.element_four {
+    background-image: url("../img/web/carousel01/header/photo4.png");
 }
 
-.slider_a input[value="four"]:checked~.slider_a_wrapper{
-    transform: translate(calc(-100% / 4));
-    
+/* Slider Positionen */
+.slider_a input[value="article1"]:checked ~ .slider_a_wrapper {
+    transform: translateX(0%);
 }
+
+.slider_a input[value="article2"]:checked ~ .slider_a_wrapper {
+    transform: translateX(-25%);
+}
+
+.slider_a input[value="article3"]:checked ~ .slider_a_wrapper {
+    transform: translateX(-50%);
+}
+
+.slider_a input[value="article4"]:checked ~ .slider_a_wrapper {
+    transform: translateX(-75%);
+}
+
 
 
 
