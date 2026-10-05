@@ -65,7 +65,7 @@
 }
 
 /* hero title der Webseite*/
-.hero-title {
+.hero {
     text-align: center;
 }
 
@@ -80,7 +80,7 @@
 
 .icon img {
     width: 20px;
-    height: auto;
+    height: 100%;
     margin-left: 42px;
 }
 
@@ -121,19 +121,7 @@
     height: 100%;
 }
 
-.element_one{
-    image-orientation: from-image;
-}
-
-.element_two{
-    image-orientation: from-image;
-}
-
-.element_three{
-    image-orientation: from-image;
-}
-
-.element_four{
+.element_one, .element_two, .element_three, .element_four {
     image-orientation: from-image;
 }
 
