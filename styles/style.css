@@ -150,7 +150,151 @@
     transform: translateX(-75%);
 }
 
+/*Kontaktformular*/
+/* Kontaktformular */
+.contact {
+    width: min(1100px, 100%);
+    min-height: 397px;
+    margin: 0 auto;
+}
 
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form h2 {
+    min-height: 62px;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #4EA487;
+    font-family: "Arima", sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.contact-form h2 img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.contact-intro {
+    width: min(979px, 100%);
+    min-height: 55px;
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #54370D;
+    font-family: "Palanquin", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+    row-gap: 16px;
+}
+
+.contact-fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #54370D;
+    font-family: "Palanquin", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-fields input,
+.contact-fields textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #B9A88F;
+    border-radius: 0;
+    background: transparent;
+    color: #54370D;
+    font: inherit;
+    outline: none;
+}
+
+.contact-fields input {
+    height: 32px;
+}
+
+.contact-fields textarea {
+    min-height: 40px;
+    resize: vertical;
+}
+
+.contact-fields input:focus,
+.contact-fields textarea:focus {
+    border-bottom: 2px solid #4EA487;
+}
+
+.message-field {
+    grid-column: 1 / -1;
+}
+
+.privacy-consent {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0 10px;
+    color: #54370D;
+    font-family: "Palanquin", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.privacy-consent input {
+    accent-color: #4EA487;
+}
+
+.privacy-consent a {
+    color: #4EA487;
+}
+
+.contact-form button {
+    width: 110px;
+    min-height: 32px;
+    padding: 4px 18px;
+    border: 1px solid #D8D2C8;
+    border-radius: 40px;
+    background: white;
+    color: #737373;
+    font-family: "Arima", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-form button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.contact-form button:not(:disabled) {
+    border-color: #4EA487;
+    color: #4EA487;
+}
+
+.contact-form button:not(:disabled):hover {
+    background: #4EA487;
+    color: white;
+}
 
 
 

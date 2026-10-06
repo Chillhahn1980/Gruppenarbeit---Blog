@@ -54,9 +54,44 @@
     </div>
 </div>
 
+/*Kontaktformular*/
+<section id="Contact" class="contact">
+    <form class="contact-form" action="mailto:sabine-albrecht@t-online.de" method="post">
+        <h2>
+            <img src="./assets/icon/person_pin.png" alt="" aria-hidden="true">
+            Kontaktformular
+        </h2>
 
+        <p class="contact-intro">
+            Haben Sie eine Frage oder eine Idee für eine Zusammenarbeit?<br>
+            Nehmen Sie Kontakt auf - ich würde mich freuen, von Ihnen zu hören und zu erkunden, wie wir zusammenarbeiten können!
+        </p>
 
+        <div class="contact-fields">
+            <label>
+                <span>Wie ist Ihr Name?</span>
+                <input type="text" name="name" autocomplete="name" required>
+            </label>
 
+            <label>
+                <span>Was lautet Ihre Email-Adresse?</span>
+                <input type="email" name="email" autocomplete="email" required>
+            </label>
+
+            <label class="message-field">
+                <span>Wie kann ich helfen?</span>
+                <textarea name="message" rows="3" required></textarea>
+            </label>
+        </div>
+
+        <label class="privacy-consent">
+            <input type="checkbox" name="privacy" required>
+            <span>Ich bestätige die <a href="./impressum.html#privacy">Datenschutzrichtlinie</a> und stimme der Verarbeitung meiner Daten zu.</span>
+        </label>
+
+        <button type="submit">Senden</button>
+    </form>
+</section>
 
     
 </body>
