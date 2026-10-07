@@ -71,7 +71,6 @@
 }
 
 /* ------------- Slider-Section ---------- */
-
 .slider_a { 
     overflow: hidden; 
     position: relative; 
@@ -93,8 +92,19 @@
 
 .slider_a_element img { 
     width: 100%; 
-    display: block; 
+    display: block;
+    border-top-right-radius: 24px;
 }
+
+.slider_a_element h3,
+.slider_a_element p {
+    color: #ffffff;
+    padding: 0 24px;
+    margin: 0;
+}
+
+.slider_a_element h3 { padding-top: 16px; }
+.slider_a_element p  { padding-bottom: 24px; }
 
 #article1:checked ~ .slider_a_wrapper { 
     transform: translateX(0); 
@@ -130,7 +140,16 @@
 #article1:checked ~ .slider_a_dots label[for="article1"],
 #article2:checked ~ .slider_a_dots label[for="article2"],
 #article3:checked ~ .slider_a_dots label[for="article3"],
-#article4:checked ~ .slider_a_dots label[for="article4"] { background: #333; }
+#article4:checked ~ .slider_a_dots label[for="article4"] { 
+    background: yellow; 
+    transform: scale(1.7);
+}
+
+/* alle Dots: weicher Übergang */
+.slider_a_dots label {
+    transition: transform 0.3s;
+}
+
 
 /*Kontaktformular*/
 /* Kontaktformular */
