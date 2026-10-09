@@ -772,7 +772,7 @@
     position: absolute;
     bottom: 4px;
     left: calc(50% - 150px);                /* von der Mitte aus nach links */
-    width: 80px;
+    width: 70px;
 }
  
 .share-button {
