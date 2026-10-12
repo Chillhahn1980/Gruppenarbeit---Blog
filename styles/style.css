@@ -151,7 +151,7 @@
 }
 
 /*Kontaktformular*/
-/* Kontaktformular */
+
 .contact {
     width: min(1100px, 100%);
     min-height: 397px;
@@ -296,7 +296,226 @@
     color: white;
 }
 
+/* Article-2-Inhalt */
+.article-content {
+  width: 100%;
+}
 
+.article-content > p {
+  margin: 0 0 32px;
+}
+
+.article-section-title {
+  margin: 40px 0 20px;
+  color: var(--faq-green);
+  font-family: "Arima", serif;
+  font-size: 32px;
+  text-align: left;
+}
+
+.article-video {
+  position: relative;
+  width: min(931px, 100%);
+  aspect-ratio: 931 / 520;
+  margin: 48px auto 64px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.video-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.video-link > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-days {
+  margin: 0 auto 48px;
+  padding-left: 24px;
+}
+
+/* Reisetipp */
+.tips {
+  position: relative;
+  width: min(1083px, 100%);
+  min-height: 195px;
+  margin: 80px auto 64px;
+  padding: 50px 32px 24px;
+  border-radius: 30px;
+  background: rgba(78, 164, 135, 0.2);
+}
+
+.tips > p {
+  margin: 0;
+  color: #3D3D3D;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.tips-badge {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #4EA487;
+  color: #F1C953;
+  font-size: 28px;
+  line-height: 1.2;
+  transform: rotate(-13.67deg);
+}
+
+.tips-badge img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Share-Bereich aus Article 1 mit aufklappenden Plattform-Links */
+.article-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.article-footer > p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.share-actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--faq-green);
+  color: var(--faq-white);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.share-button img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.share-links {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%);
+  transition: opacity 200ms ease, visibility 200ms ease;
+}
+
+.share-actions:hover .share-links,
+.share-actions:focus-within .share-links {
+  opacity: 1;
+  visibility: visible;
+}
+
+.share-link,
+.share-link:visited {
+  color: var(--faq-green);
+  white-space: nowrap;
+}
+
+/* Responsives Layout */
+@media (max-width: 800px) {
+  .article {
+    width: calc(100% - 40px);
+  }
+
+  .article-header {
+    gap: 24px;
+  }
+
+  .article-title {
+    font-size: clamp(36px, 6vw, 56px);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: calc(100% - 32px);
+    min-height: 80px;
+    gap: 24px;
+  }
+
+  .navbar ul {
+    gap: 16px;
+  }
+
+  .article {
+    width: calc(100% - 32px);
+    padding: 32px 0;
+  }
+
+  .article-header {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .article-title {
+    font-size: 40px;
+  }
+
+  .article-lead {
+    font-size: 18px;
+  }
+
+  .author {
+    width: min(240px, 100%);
+    flex-basis: auto;
+    align-self: center;
+  }
+
+  .article-meta {
+    gap: 12px 20px;
+  }
+
+  .tips {
+    min-height: 145px;
+    padding: 40px 16px 20px;
+  }
+
+  .tips > p {
+    font-size: 18px;
+  }
+
+  .share-links {
+    top: calc(100% + 8px);
+    left: 0;
+    transform: none;
+  }
+}
 
 
 
