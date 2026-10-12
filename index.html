@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/Icon/logo_favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/logo_favicon.png">
     <title>Reiseblock_3283</title>
 
     <link rel="stylesheet" href="styles/variables.css">
@@ -15,7 +15,7 @@
 
 <header>
     <nav class="navbar">
-        <img class="logo-img" src="./assets/Icon/logo.png" alt="Logo">
+        <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
 
         <ul>
            <li><a href="#Highlights">Highlights</a></li>
@@ -26,36 +26,109 @@
 </header>
 
 <body>
-<div class="hero">
-	<img src="./img/web/hero_web.png" alt="hero">
-</div>
-<div>
-    <div class="highlight-section">
-        <h4 class ="icon">
-            <img src ="./img/web/rocket_launch.png" alt="Icon zu Highlights">
-            <p>Highlights</p>
-        </h4>
-        <p>From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean 
-           and the serene landscapes of Scandinavia, each destination offers a distinct 
-           way to explore the world.
-        </p>
-        <div class="slider_a">
-        <input type="radio" name="slider" value="article1" checked>
-        <input type="radio" name="slider" value="article2">
-        <input type="radio" name="slider" value="article3">
-        <input type="radio" name="slider" value="article4">
 
-        <div class="slider_a_wrapper">
-            <div class="slider_a_element element_one"></div>
-            <div class="slider_a_element element_two"></div>
-            <div class="slider_a_element element_three"></div>
-            <div class="slider_a_element element_four"></div>
-        </div>
-        </div>
+    <section class="hero">
+  <div class="hero-yellow">
+    <div class="yellow-fill"></div>
+    <div class="hero-shape"></div>
+  </div>
+
+  <div class="hero-text">
+    <h1>Cappadocia</h1>
+    <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
+  </div>
+
+  <div class="badge">
+    <img class="badge-text" src="img/web/Cappadocia_Turkey.png" alt="Cappadocia · Turkey">
+    <img class="badge-flag" src="img/web/Flag_orb_Turkey.png" alt="">
+  </div>
+</section>
+
+  <main>
+    <!-- Highlights -->
+  <div class="highlight-section">
+  <h4 class="icon">
+    <img src="./img/web/rocket_launch.png" alt="Icon zu Highlights">
+    <p>Highlights</p>
+  </h4>
+  <p>From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean
+     and the serene landscapes of Scandinavia, each destination offers a distinct
+     way to explore the world.
+  </p>
+
+  <div class="slider_a">
+    <input type="radio" name="slider" id="article1" value="article1" checked>
+    <input type="radio" name="slider" id="article2" value="article2">
+    <input type="radio" name="slider" id="article3" value="article3">
+    <input type="radio" name="slider" id="article4" value="article4">
+
+    <div class="slider_a_wrapper">
+      <div class="slider_a_element element_one">
+        <img src="./img/web/carousel01/header photo1.png" alt="Strandfoto">
+        <h3>Die atemberaubendsten Strände der Welt</h3>
+        <p>Von pudrig-weichem weißem Sand bis zu dramatischen Küsten, die von türkisfarbenen Wellen geküsst werden - diese Strände sind mehr als bloße Reiseziele, sie sind ein Lebensgefühl.</p>
+      </div>
+      <div class="slider_a_element element_two">
+        <img src="./img/web/carousel01/header photo2.png" alt="Foto von Kopenhagen">
+        <h3>Kopenhagen in 3 Tagen: Große Erlebnisse, clever gespart</h3>
+        <p><a href="article2.html">Kopenhagen entdecken - wo historischer Charme auf modernes Design, lebendige Fahrradkultur und Leben am Wasser trifft.</a></p>
+      </div>
+      <div class="slider_a_element element_three">
+        <img src="./img/web/carousel01/header photo3.png" alt="Foto Pattaya Pulse">
+        <h3>Pattaya Pulse:<br>Gutes Essen, Sonne und leuchtende Nächte</h3>
+        <p><a href="article3.html">Von belebten Strandpromenaden bis zu nahegelegenen Inseln bietet die Stadt eine energiegeladene und vielseitige Auszeit. Entdecke Pattaya City mit seinem pulsierenden Nachtleben und seinen bedeutenden kulturellen Sehenswürdigkeiten.</a></p>
+      </div>
+      <div class="slider_a_element element_four">
+        <img src="./img/web/carousel01/header photo4.png" alt="Foto vom Fudji">
+        <h3>Berg Fuji</h3>
+        <p><a href="article4.html">Der bekannteste Berg Japans und ein aktiver Vulkan, etwa 100 Kilometer südwestlich von Tokio gelegen. Sein Name wird mit den Schriftzeichen für „Reichtum“ und „Samurai“ geschrieben. Fuji steht für Stärke, Ehre und beständiges Ansehen.</a></p>
+      </div>
     </div>
+
+    <div class="slider_a_dots">
+      <label for="article1" aria-label="Slide 1"></label>
+      <label for="article2" aria-label="Slide 2"></label>
+      <label for="article3" aria-label="Slide 3"></label>
+      <label for="article4" aria-label="Slide 4"></label>
+    </div>
+  </div>
 </div>
 
+<<<<<<< HEAD
 
+=======
+<!-- FAQ-Bereich -->
+<section class="faq" id="faq">
+    <h2 class="faq-title">
+        <img src="./img/web/live_help.png" alt="" class="faq-icon">
+        FAQ
+    </h2>
+
+    <details class="faq-item">
+        <summary>Was ist die Geschichte hinter meinem Reiseblog?</summary>
+        <p>Alles begann mit einem Notizbuch voller Reiseerinnerungen, das irgendwann zu klein wurde. Ich wollte meine Erlebnisse nicht nur für mich festhalten, sondern mit anderen teilen und Lust aufs Entdecken machen. Heute findest du hier ehrliche Berichte, praktische Tipps und Geschichten von unterwegs, von großen Städten bis zu kleinen, versteckten Orten.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Wie plane, dokumentiere und teile ich meine Reisen?</summary>
+        <p>Vor jeder Reise recherchiere ich Ziele, Unterkünfte und Routen und halte alles in einer einfachen Checkliste fest. Unterwegs mache ich Fotos und schreibe abends kurze Notizen, damit keine Details verloren gehen. Zu Hause wähle ich die besten Bilder aus und mache daraus Blogbeiträge, die dir bei der Planung deiner eigenen Reise helfen sollen.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Wie können Marken, Unternehmen oder andere Creator mit mir zusammenarbeiten oder Kontakt aufnehmen?</summary>
+        <p>Ich freue mich über Kooperationen, die zu meinem Blog und meinen Leserinnen und Lesern passen, zum Beispiel mit Unterkünften, Reiseanbietern oder anderen Reise-Creatorn. Schreib mir einfach über das Kontaktformular eine kurze Nachricht mit deiner Idee. Ich melde mich so schnell wie möglich bei dir.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Wie können Leserinnen und Leser diesen Blog und die Arbeit dahinter unterstützen?</summary>
+        <p>Die größte Unterstützung ist, wenn du meine Beiträge liest, kommentierst und mit Freunden teilst. Du kannst mir auch in den sozialen Medien folgen und mir deine eigenen Reisetipps schicken. Jede Rückmeldung motiviert mich, weiterzuschreiben und neue Orte für dich zu entdecken.</p>
+    </details>
+</section>
+
+
+
+/*Kontaktformular*/
+>>>>>>> 3338b92937579cc6159ec66e3d70480d8f1eca9d
 <section id="Contact" class="contact">
     <form class="contact-form" action="mailto:sabine-albrecht@t-online.de" method="post">
         <h2>
@@ -93,26 +166,27 @@
         <button type="submit">Senden</button>
     </form>
 </section>
-
-    
+</main>
 </body>
-<footer id="impressum" class="footer">
-    <div>
-        <img src="./img/web/Frame 91.png" alt="Impressum" width="400" height="22">
+<footer class="site-footer">
+    <div class="footer__left">
+      <span>© Travel Blog 2026</span>
+      <a href="#">Imprint</a>
+      <a href="#">Cookie Preferences</a>
     </div>
-    <div>
-        <a href="https://www.Tiktok.com" target="_blank">
-            <img src="./img/web/Tiktok_icon.png" alt="Tiktok" width="22" height="22">
-        </a>
-        <a href="https://www.youtube.com" target="_blank">
-            <img src="./img/web/youtube.png" alt="Youtube" width="22" height="22">
-        </a>
-        <a href="https://www.facebook.com" target="_blank">
-            <img src="./img/web/facebook.png" alt="Facebook" width="22" height="22">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="./img/web/Instagram.png" alt="Instagram" width="22" height="22">
-        </a>
+    <div class="footer__social">
+      <a href="#" aria-label="TikTok">
+      <img src="./img/web/Tiktok_icon.png" alt="Tiktok" width="22" height="22">
+      </a>
+      <a href="#" aria-label="YouTube">
+      <img src="./img/web/youtube.png" alt="Youtube" width="22" height="22">
+      </a>
+      <a href="#" aria-label="Facebook">
+      <img src="./img/web/facebook.png" alt="Facebook" width="22" height="22">
+      </a>
+      <a href="#" aria-label="Instagram">
+      <img src="./img/web/Instagram.png" alt="Instagram" width="22" height="22">
+      </a>
     </div>
 </footer>
 </html>

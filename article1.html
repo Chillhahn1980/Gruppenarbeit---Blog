@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Article1</title>
 
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/standard.css">
@@ -14,7 +14,7 @@
 <header>
   <nav class="navbar">
     <a href="./index.html" aria-label="Zur Startseite">
-      <img class="logo-img" src="./assets/Icon/logo.png" alt="Logo">
+      <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
     </a>
 
     <ul>
@@ -26,6 +26,123 @@
 </header>
 
 <body>
-    
+    <main>
+        
+        <article class="article">
+
+            <!-- Kopf des Artikels: links Titel + Infos, rechts die Autorin -->
+            <div class="article-header">
+                <div class="article-intro">
+                    <p class="article-kicker">Where the Ocean Meets Your Soul</p>
+                    <h1 class="article-title">The World’s Most Breathtaking Beaches</h1>
+                    <p class="article-lead">From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these beaches are more than destinations – they’re feelings.</p>
+
+                    <!-- <dl> = Liste mit Begriff (dt) und Wert (dd) -->
+                    <dl class="article-meta">
+                        <div>
+                            <dt><img src="./img/web/icon-date.png" alt=""> Date:</dt>
+                            <dd><time datetime="2026-01-26">26.01.2026</time></dd>
+                        </div>
+                        <div>
+                            <dt><img src="./img/web/icon-time.png" alt=""> Reading time:</dt>
+                            <dd>6 min.</dd>
+                        </div>
+                        <div>
+                            <dt><img src="./img/web/icon-read.png" alt=""> Read:</dt>
+                            <dd>164</dd>
+                        </div>
+                        <div>
+                            <dt><img src="./img/web/icon-share.png" alt=""> Shared:</dt>
+                            <dd>18</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- <aside> = Zusatzinfo neben dem eigentlichen Text: die Autorin -->
+                <aside class="author">
+                    <img src="./img/web/Avatar_women.png" alt="Portrait of Tamara Wallker" class="author-img">
+                    <h2 class="author-name">Tamara Wallker</h2>
+                    <p class="author-role">Author</p>
+                    <p class="author-bio">I’ve been traveling since 2017, chasing moments instead of plans. I’m fascinated by snakes, love sharks, would happily spend weeks deep in the jungle, and can never get enough papaya. As long as there’s a next destination, I know I’m exactly where I’m meant to be.</p>
+                </aside>
+            </div>
+
+            <!-- Der eigentliche Text des Artikels -->
+            <section class="article-content">
+                <h2 class="article-heading">TOP 5 beach destinations for 2026</h2>
+
+                <!-- Die 5 Bilder, schräg gedreht wie im Design -->
+                <div class="carousel">
+                    <img src="./img/web/carousel02/beach01.png" alt="Turtle swimming in clear water">
+                    <img src="./img/web/carousel02/beach02.png" alt="Palm trees on a white beach">
+                    <img src="./img/web/carousel02/beach03.png" alt="Sunshade on a sandy beach">
+                    <img src="./img/web/carousel02/beach04.png" alt="Rocks on a beach with turquoise water">
+                    <img src="./img/web/carousel02/beach05.png" alt="Woman walking on a bright beach">
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.</p>
+
+                <!-- Dieser Teil ist schmaler und eingerückt -->
+                <div class="article-list">
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada.:</p>
+
+                    <!-- <ol> = nummerierte Liste, <strong> = wichtiges Wort (fett) -->
+                    <ol>
+                        <li>turpis gravida <strong>semper</strong>. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper.</li>
+                        <li><strong>Lorem ipsum</strong> dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada.</li>
+                        <li>Ante in commodo porta <strong>scelerisque</strong> turpis gravida semper.</li>
+                        <li>Ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.</li>
+                    </ol>
+                </div>
+
+                <!-- Pro-Tipps: grüner Kasten mit schrägem Schild oben links -->
+                <section class="tips">
+                    <h3 class="tips-badge">
+                        <img src="./img/web/icon-tip.png" alt="">
+                        Pro tips
+                    </h3>
+                    <ol>
+                        <li>Ante in commodo porta scelerisque turpis gravida semper. <a href="#">Useful link.</a> Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper.</li>
+                        <li>Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.</li>
+                    </ol>
+                </section>
+
+                <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur.<br>
+                Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit ameta enim vestibulum malesuada. Antenes intrew commodo porta scelerisque turpis. ipsum dolor sit ametert consectetur. Egestas a enim vestibulum malesuada. Ante in comm odo porta scelerisque turpis gravida semper.</p>
+            </section>
+
+            <!-- Fuß des Artikels: Aufruf zum Teilen, mit Pfeil zum Button -->
+            <footer class="article-footer">
+                <p>Follow me for more content like this, and<br>share the article with your friends!</p>
+                <img src="./img/web/arrow.png" alt="" class="share-arrow">
+                <button type="button" class="share-button">
+                    <img src="./img/web/icon-share-yellow.png" alt="">
+                    Share
+                </button>
+            </footer>
+
+        </article>
+    </main>
+<footer class="site-footer">
+    <div class="footer__left">
+      <span>© Travel Blog 2026</span>
+      <a href="#">Imprint</a>
+      <a href="#">Cookie Preferences</a>
+    </div>
+    <div class="footer__social">
+      <a href="#" aria-label="TikTok">
+      <img src="./img/web/Tiktok_icon.png" alt="Tiktok" width="22" height="22">
+      </a>
+      <a href="#" aria-label="YouTube">
+      <img src="./img/web/youtube.png" alt="Youtube" width="22" height="22">
+      </a>
+      <a href="#" aria-label="Facebook">
+      <img src="./img/web/facebook.png" alt="Facebook" width="22" height="22">
+      </a>
+      <a href="#" aria-label="Instagram">
+      <img src="./img/web/Instagram.png" alt="Instagram" width="22" height="22">
+      </a>
+    </div>
+</footer> 
 </body>
 </html>
