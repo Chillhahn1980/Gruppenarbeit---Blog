@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/standard.css">
-    <link rel="stylesheet" href="./styles/font.css">
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum | Kopenhagen Reiseblog</title>
+  <link rel="stylesheet" href="impressum.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Hauptnavigation">
+      <a href="./index.html" class="navbar__home">Kopenhagen Reiseblog</a>
+      <a href="./index.html" class="navbar__back">Zurück zur Startseite</a>
+    </nav>
+  </header>
 
-<header>
-  <nav class="navbar">
-    <a href="./index.html" aria-label="Zur Startseite">
-      <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
-    </a>
+  <main class="imprint">
+    <article class="imprint__card">
+      <p class="imprint__eyebrow">Kopenhagen Reiseblog</p>
+      <h1>Impressum</h1>
 
-    <ul>
-      <li><a href="./index.html#Highlights">Highlights</a></li>
-      <li><a href="./index.html#FAQ">FAQ</a></li>
-      <li><a href="./index.html#Contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <section class="imprint__section" aria-labelledby="provider-heading">
+        <h2 id="provider-heading">Projektarbeit</h2>
+        <p>
+          <strong>Projektgruppe:</strong><br>
+          Marcel Schillhahn<br>
+          Christina J. <span class="placeholder">[vollständigen Nachnamen ergänzen]</span><br>
+          Sabine Albrecht
+        </p>
 
+        <p>
+          <strong>Anbieter / vertretungsberechtigte Person:</strong><br>
+          <span class="placeholder">
+            [Developer Akademie]
+          </span>
+        </p>
 
-  <main>
-  <section id="privacy"> /*aud dem Kontaktformula - Datenschutz*/
-    <h1> Datenschutzrichtlinie</h1>
-    /*Text zum Dokument fehlt noch*/
-  </section>
+        <address>
+          <span class="placeholder">[Mustermannstr. 12]</span><br>
+          <span class="placeholder">[14055 Berlin]</span><br>
+          Deutschland
+        </address>
+      </section>
 
-</main>
-    
+      <section class="imprint__section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Kontakt</h2>
+        <p>
+          E-Mail:
+          <span class="placeholder">[mustermann@t-online.de]</span>
+        </p>
+        <p>
+          Telefon:
+          <span class="placeholder">[Telefonnummer, falls vorhanden]</span>
+        </p>
+      </section>
+
+      <section class="imprint__section" aria-labelledby="editorial-heading">
+        <h2 id="editorial-heading">
+          Verantwortlich für journalistisch-redaktionelle Inhalte
+        </h2>
+        <p>
+          <span class="placeholder">[Max mustermann]</span><br>
+          <span class="placeholder">[Mustermannstr. 12]</span><br>
+          <span class="placeholder">[14055 Berlin]</span>
+        </p>
+      </section>
+
+      <section class="imprint__section" aria-labelledby="register-heading">
+        <h2 id="register-heading">Register- und Steuerangaben: sind nicht vorhanden</h2>
+        <p>
+          <strong>Register:</strong>
+          <span class="placeholder">[Registergericht und Registernummer, nicht eingetragen]</span>
+        </p>
+        <p>
+          <strong>Umsatzsteuer-ID:</strong>
+          <span class="placeholder">[USt-IdNr. nicht vorhanden]</span>
+        </p>
+      </section>
+
+      <p class="imprint__notice">
+        Diese Webseite wurde im Rahmen einer Projektarbeit erstellt.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>2026 Kopenhagen Reiseblog</p>
+  </footer>
 </body>
 </html>

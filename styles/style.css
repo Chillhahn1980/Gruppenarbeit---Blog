@@ -518,12 +518,6 @@
 
 
 
-
-
-
-
-
-
 /* Share-Bereich aus Article 1 mit aufklappenden Plattform-Links */
 .article-footer {
   position: relative;
@@ -589,6 +583,8 @@
   color: var(--faq-green);
   white-space: nowrap;
 }
+
+
 
 /* Responsives Layout */
 @media (max-width: 800px) {
