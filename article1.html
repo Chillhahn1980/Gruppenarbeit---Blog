@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article1</title>
+    <title>Die schönsten Strände der Welt | Reiseblog</title>
 
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/standard.css">
     <link rel="stylesheet" href="./styles/font.css">
     <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Nur für Article 1 -->
+    <link rel="stylesheet" href="./styles/style.article1.css">
 </head>
 
-<header>
-  <nav class="navbar">
-    <a href="./index.html" aria-label="Zur Startseite">
-      <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
-    </a>
-
-    <ul>
-      <li><a href="./index.html#Highlights">Highlights</a></li>
-      <li><a href="./index.html#FAQ">FAQ</a></li>
-      <li><a href="./index.html#Contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
+<!-- Alles, was man sieht, gehört IN den <body>, auch der <header> -->
 <body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" aria-label="Zur Startseite">
+                <img class="logo-img" src="./assets/icon/logo.png" alt="Logo des Reiseblogs">
+            </a>
+
+            <ul>
+                <li><a href="./index.html#Highlights">Highlights</a></li>
+                <li><a href="./index.html#FAQ">FAQ</a></li>
+                <li><a href="./index.html#Contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        
+
         <article class="article">
 
             <!-- Kopf des Artikels: links Titel + Infos, rechts die Autorin -->
             <div class="article-header">
                 <div class="article-intro">
-                    <p class="article-kicker">Where the Ocean Meets Your Soul</p>
-                    <h1 class="article-title">The World’s Most Breathtaking Beaches</h1>
-                    <p class="article-lead">From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these beaches are more than destinations – they’re feelings.</p>
+                    <p class="article-kicker">Wo das Meer deine Seele berührt</p>
+                    <h1 class="article-title">Die schönsten Strände der Welt</h1>
+                    <p class="article-lead">Von puderweichem, weißem Sand bis zu wilden Küsten, an denen türkisfarbene Wellen brechen: Diese Strände sind mehr als Reiseziele – sie sind ein Gefühl.</p>
 
                     <!-- <dl> = Liste mit Begriff (dt) und Wert (dd) -->
                     <dl class="article-meta">
                         <div>
-                            <dt><img src="./img/web/icon-date.png" alt=""> Date:</dt>
+                            <dt><img src="./img/web/icon-date.png" alt=""> Datum:</dt>
                             <dd><time datetime="2026-01-26">26.01.2026</time></dd>
                         </div>
                         <div>
-                            <dt><img src="./img/web/icon-time.png" alt=""> Reading time:</dt>
-                            <dd>6 min.</dd>
+                            <dt><img src="./img/web/icon-time.png" alt=""> Lesezeit:</dt>
+                            <dd>6 Min.</dd>
                         </div>
                         <div>
-                            <dt><img src="./img/web/icon-read.png" alt=""> Read:</dt>
+                            <dt><img src="./img/web/icon-read.png" alt=""> Gelesen:</dt>
                             <dd>164</dd>
                         </div>
                         <div>
-                            <dt><img src="./img/web/icon-share.png" alt=""> Shared:</dt>
+                            <dt><img src="./img/web/icon-share.png" alt=""> Geteilt:</dt>
                             <dd>18</dd>
                         </div>
                     </dl>
@@ -60,89 +64,91 @@
 
                 <!-- <aside> = Zusatzinfo neben dem eigentlichen Text: die Autorin -->
                 <aside class="author">
-                    <img src="./img/web/Avatar_women.png" alt="Portrait of Tamara Wallker" class="author-img">
+                    <img src="./img/web/Avatar_women.png" alt="Porträt von Tamara Wallker" class="author-img">
                     <h2 class="author-name">Tamara Wallker</h2>
-                    <p class="author-role">Author</p>
-                    <p class="author-bio">I’ve been traveling since 2017, chasing moments instead of plans. I’m fascinated by snakes, love sharks, would happily spend weeks deep in the jungle, and can never get enough papaya. As long as there’s a next destination, I know I’m exactly where I’m meant to be.</p>
+                    <p class="author-role">Autorin</p>
+                    <p class="author-bio">Ich reise seit 2017 und jage lieber Momenten nach als festen Plänen. Schlangen faszinieren mich, Haie liebe ich, ich würde ohne Zögern wochenlang tief im Dschungel verbringen und von Papaya bekomme ich nie genug. Solange es ein nächstes Reiseziel gibt, weiß ich: Ich bin genau da, wo ich sein soll.</p>
                 </aside>
             </div>
 
             <!-- Der eigentliche Text des Artikels -->
             <section class="article-content">
-                <h2 class="article-heading">TOP 5 beach destinations for 2026</h2>
+                <h2 class="article-heading">Die TOP 5 Strände für 2026</h2>
 
                 <!-- Die 5 Bilder, schräg gedreht wie im Design -->
                 <div class="carousel">
-                    <img src="./img/web/carousel02/beach01.png" alt="Turtle swimming in clear water">
-                    <img src="./img/web/carousel02/beach02.png" alt="Palm trees on a white beach">
-                    <img src="./img/web/carousel02/beach03.png" alt="Sunshade on a sandy beach">
-                    <img src="./img/web/carousel02/beach04.png" alt="Rocks on a beach with turquoise water">
-                    <img src="./img/web/carousel02/beach05.png" alt="Woman walking on a bright beach">
+                    <img src="./img/web/carousel02/beach01.png" alt="Meeresschildkröte schwimmt in klarem Wasser">
+                    <img src="./img/web/carousel02/beach02.png" alt="Palmen an einem weißen Sandstrand">
+                    <img src="./img/web/carousel02/beach03.png" alt="Sonnenschirm aus Stroh an einem Sandstrand">
+                    <img src="./img/web/carousel02/beach04.png" alt="Felsen an einem Strand mit türkisfarbenem Wasser">
+                    <img src="./img/web/carousel02/beach05.png" alt="Frau spaziert an einem hellen Strand">
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.</p>
+                <p>Es gibt Orte, an denen die Zeit langsamer zu laufen scheint. Man spürt den warmen Sand unter den Füßen, hört nur das Rauschen der Wellen und vergisst für einen Moment alles andere. Auf meinen Reisen habe ich viele Strände gesehen, aber einige davon sind mir besonders im Kopf geblieben. Sie sind nicht nur schön, sondern haben jeder für sich etwas Besonderes: klares Wasser zum Schnorcheln, ruhige Buchten zum Entspannen oder eine Natur, die einen einfach staunen lässt.</p>
 
                 <!-- Dieser Teil ist schmaler und eingerückt -->
                 <div class="article-list">
-                    <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada.:</p>
+                    <p>Das sind meine fünf Lieblingsstrände für deine nächste Reise:</p>
 
                     <!-- <ol> = nummerierte Liste, <strong> = wichtiges Wort (fett) -->
                     <ol>
-                        <li>turpis gravida <strong>semper</strong>. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper.</li>
-                        <li><strong>Lorem ipsum</strong> dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada.</li>
-                        <li>Ante in commodo porta <strong>scelerisque</strong> turpis gravida semper.</li>
-                        <li>Ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.</li>
+                        <li><strong>Whitehaven Beach</strong> (Australien): fast sieben Kilometer strahlend weißer Sand, so fein, dass er unter den Füßen quietscht. Am schönsten ist der Blick vom Aussichtspunkt Hill Inlet.</li>
+                        <li><strong>Anse Source d’Argent</strong> (Seychellen): riesige, rund geschliffene Granitfelsen, Palmen und flaches, glasklares Wasser. Hier fühlt man sich wie auf einer Postkarte.</li>
+                        <li><strong>Grace Bay</strong> (Turks- und Caicosinseln): ruhiges, türkisfarbenes Wasser, ideal zum Schwimmen und Schnorcheln, auch für Familien mit Kindern.</li>
+                        <li><strong>Matira Beach</strong> (Bora Bora): flache Lagune, in der man weit hinauslaufen kann, und Sonnenuntergänge, die man nie vergisst.</li>
+                        <li><strong>Playa Paraíso</strong> (Mexiko): weißer Sand direkt unter den alten Maya-Ruinen von Tulum. Mit etwas Glück schwimmt dir hier eine Meeresschildkröte über den Weg.</li>
                     </ol>
                 </div>
 
-                <!-- Pro-Tipps: grüner Kasten mit schrägem Schild oben links -->
+                <!-- Profi-Tipps: grüner Kasten mit schrägem Schild oben links -->
                 <section class="tips">
                     <h3 class="tips-badge">
                         <img src="./img/web/icon-tip.png" alt="">
-                        Pro tips
+                        Profi-Tipps
                     </h3>
                     <ol>
-                        <li>Ante in commodo porta scelerisque turpis gravida semper. <a href="#">Useful link.</a> Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper.</li>
-                        <li>Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.</li>
+                        <li>Komm früh am Morgen: Dann ist der Strand fast leer, das Licht ist weich und die Fotos werden am schönsten. <a href="#">Hilfreicher Link.</a> Dort findest du die besten Reisezeiten für jedes Ziel.</li>
+                        <li>Pack eine riffschonende Sonnencreme, genug Wasser und eine Schnorchelmaske ein. Nimm deinen Müll wieder mit und lass Muscheln und Korallen am Strand, damit diese Orte so schön bleiben, wie sie sind.</li>
                     </ol>
                 </section>
 
-                <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur.<br>
-                Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit ameta enim vestibulum malesuada. Antenes intrew commodo porta scelerisque turpis. ipsum dolor sit ametert consectetur. Egestas a enim vestibulum malesuada. Ante in comm odo porta scelerisque turpis gravida semper.</p>
+                <p>Am Ende ist es nicht nur die Farbe des Wassers oder die Feinheit des Sandes, die einen Strand unvergesslich macht. Es sind die Momente: der erste Sprung ins Meer, ein Picknick im Schatten der Palmen oder ein Sonnenuntergang, den man schweigend genießt.<br>
+                Ganz egal, ob du Abenteuer suchst oder einfach nur abschalten möchtest, an einem dieser Strände wirst du fündig. Nimm dir Zeit, lass dich treiben und entdecke deinen eigenen Lieblingsplatz am Meer. Vielleicht sehen wir uns ja dort, mit den Füßen im Sand und einer frischen Papaya in der Hand.</p>
             </section>
 
             <!-- Fuß des Artikels: Aufruf zum Teilen, mit Pfeil zum Button -->
             <footer class="article-footer">
-                <p>Follow me for more content like this, and<br>share the article with your friends!</p>
+                <p>Folge mir für mehr solche Beiträge und<br>teile den Artikel mit deinen Freunden!</p>
                 <img src="./img/web/arrow.png" alt="" class="share-arrow">
                 <button type="button" class="share-button">
                     <img src="./img/web/icon-share-yellow.png" alt="">
-                    Share
+                    Teilen
                 </button>
             </footer>
 
         </article>
     </main>
-<footer class="site-footer">
-    <div class="footer__left">
-      <span>© Travel Blog 2026</span>
-      <a href="#">Imprint</a>
-      <a href="#">Cookie Preferences</a>
-    </div>
-    <div class="footer__social">
-      <a href="#" aria-label="TikTok">
-      <img src="./img/web/Tiktok_icon.png" alt="Tiktok" width="22" height="22">
-      </a>
-      <a href="#" aria-label="YouTube">
-      <img src="./img/web/youtube.png" alt="Youtube" width="22" height="22">
-      </a>
-      <a href="#" aria-label="Facebook">
-      <img src="./img/web/facebook.png" alt="Facebook" width="22" height="22">
-      </a>
-      <a href="#" aria-label="Instagram">
-      <img src="./img/web/Instagram.png" alt="Instagram" width="22" height="22">
-      </a>
-    </div>
-</footer> 
+
+    <footer class="site-footer">
+        <div class="footer__left">
+            <span>© Reiseblog 2026</span>
+            <a href="#">Impressum</a>
+            <a href="#">Cookie-Einstellungen</a>
+        </div>
+        <div class="footer__social">
+            <a href="#" aria-label="TikTok">
+                <img src="./img/web/Tiktok_icon.png" alt="" width="22" height="22">
+            </a>
+            <a href="#" aria-label="YouTube">
+                <img src="./img/web/youtube.png" alt="" width="22" height="22">
+            </a>
+            <a href="#" aria-label="Facebook">
+                <img src="./img/web/facebook.png" alt="" width="22" height="22">
+            </a>
+            <a href="#" aria-label="Instagram">
+                <img src="./img/web/Instagram.png" alt="" width="22" height="22">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
