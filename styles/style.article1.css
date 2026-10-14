@@ -122,31 +122,29 @@
 .carousel {
     display: flex;
     justify-content: center;
-    margin-bottom: 64px;                    /* Abstand nach unten */
-    perspective: 1000px;                    /* ohne das sieht das Drehen flach aus */
+    padding: 40px 0;
 }
  
 .carousel img {
-    width: 200px;
-    height: 280px;
-    margin: 0 -20px;                        /* Bilder überlappen ein bisschen */
+    width: 250px;
+    height: 360px;
+    margin-left: -60px;
     border-radius: 16px;
     object-fit: cover;
-    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.25));        /* Schatten nach unten */
-    transform: rotateY(-25deg);             /* um die senkrechte Achse drehen */
-    transition: transform 0.4s ease, margin 0.4s ease;    /* sanft drehen, verschieben und überlagern */
+    transform: perspective(800px) rotateY(20deg);
+    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.25));
+    transition: transform 0.4s ease, margin 0.4s ease;
 }
  
-/* das Bild unter der Maus: gerade, etwas größer, mit Abstand */
-.carousel img:hover {
-    transform: rotateY(deg) scale(1.1);
-    margin: 0 40px;
-    z-index: 2;
+.carousel img:first-child {
+    margin-left: 0;               /* das erste Bild nicht verschieben */
 }
 
-/* alle Bilder LINKS vom gehoverten Bild in die andere Richtung drehen */
-.carousel img:has(~ img:hover) {
-    transform: rotateY(deg);
+/* Bild unter der Maus: gerade und mit Abstand links und rechts */
+.carousel img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    margin-left: 40px;
+    margin-right: 100px;
 }
 
  
