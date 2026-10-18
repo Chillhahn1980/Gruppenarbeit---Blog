@@ -391,6 +391,139 @@
   object-fit: contain;
 }
 
+/* Navbar Impressum */
+.site-header-Impressum {
+  width: 100%;
+  background: #5FA88A;
+}
+
+.navbar-Impressum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(1200px, calc(100% - 64px));
+  min-height: 96px;
+  margin: 0 auto;
+}
+
+.navbar-Impressum .navbar__home,
+.navbar-Impressum .navbar__back {
+  color: #fff;
+  font-family: "Palanquin", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar-Impressum .navbar__home:hover,
+.navbar-Impressum .navbar__back:hover,
+.navbar-Impressum .navbar__home:focus-visible,
+.navbar-Impressum .navbar__back:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .navbar-Impressum {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-Impressum {
+    width: calc(100% - 32px);
+    min-height: 80px;
+    gap: 16px;
+  }
+
+  .navbar-Impressum .navbar__home,
+  .navbar-Impressum .navbar__back {
+    font-size: 14px;
+  }
+}
+/* Impressum */
+.imprint {
+  width: min(1200px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 24px 0 48px;
+  color: #54370D;
+  font-family: "Palanquin", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.imprint__card {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imprint__eyebrow {
+  margin: 0;
+  color: #4EA487;
+  font-size: 20px;
+}
+
+.imprint h1 {
+  margin: 0 0 32px;
+  color: #F1C953;
+  font-family: "Arima", serif;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.imprint__section {
+  margin: 0 0 28px;
+}
+
+.imprint__section h2 {
+  margin: 0 0 10px;
+  color: #4EA487;
+  font-family: "Arima", serif;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.imprint__section p,
+.imprint__section address {
+  margin: 0 0 16px;
+}
+
+.imprint__section address {
+  font-style: normal;
+}
+
+.imprint .placeholder {
+  color: #666;
+}
+
+.imprint__notice {
+  margin: 36px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(78, 164, 135, 0.3);
+}
+
+@media (max-width: 800px) {
+  .imprint {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .imprint {
+    width: calc(100% - 32px);
+    padding-top: 20px;
+  }
+
+  .imprint h1 {
+    font-size: 40px;
+  }
+
+  .imprint__section h2 {
+    font-size: 21px;
+  }
+}
+
+
 /* Tablet */
 @media (max-width: 800px) {
   .page-article2 .article {
