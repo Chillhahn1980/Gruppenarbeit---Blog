@@ -203,8 +203,10 @@
 
 .highlights__title {
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+     color: var(--faq-green);
+    font-size: 28px;
 }
 
 .highlights__intro {
