@@ -1,0 +1,254 @@
+
+
+
+
+
+
+
+/* Der ganze Artikel: zentriert, so breit wie im Design (1200px) */
+.article {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    color: var(--faq-text);
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+/* ---------- Kopf: links Text, rechts Autorin ---------- */
+ 
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+    margin-bottom: 64px;
+}
+ 
+.article-kicker {
+    color: var(--faq-green);
+    font-size: 28px;
+}
+ 
+.article-title {
+    color: var(--faq-yellow);
+    font-size: 56px;
+    line-height: 1.15;
+}
+ 
+.article-lead {
+    max-width: 720px;
+    margin-top: 16px;
+    font-size: 22px;
+    line-height: 1.4;
+}
+ 
+/* Datum, Lesezeit usw.: alles in einer Reihe */
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;                        /* bricht um, wenn kein Platz ist */
+    gap: 8px 32px;
+    margin-top: 24px;
+    font-size: 14px;
+}
+ 
+/* Ein Eintrag: Icon + Begriff + Wert nebeneinander */
+.article-meta div {
+    display: flex;
+    gap: 4px;
+}
+ 
+.article-meta dt {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+ 
+.article-meta img {
+    width: 16px;
+    height: 16px;
+}
+ 
+/* Autorinnen-Karte: hellgrün, alles zentriert */
+.author {
+    flex-shrink: 0;                         /* Karte wird nicht gequetscht */
+    width: 240px;
+    background-color: var(--light-green);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+}
+ 
+/* Rundes Foto */
+.author-img {
+    display: block;                         /* block = zentriert */
+    width: 96px;
+    height: 96px; 
+    margin: 0 auto 8px;                     /* auto = waagerecht zentriert */
+    border-radius: 50%;                     /* 50% = Kreis */
+    border: 3px solid var(--faq-white);     /* weißer Rand */
+    object-fit: cover;                      /* Bild wird nicht verzerrt */
+}
+ 
+.author-name {
+    font-size: 18px;
+}
+ 
+.author-role {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+ 
+.author-bio {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+}
+ 
+/* ---------- Text ---------- */
+ 
+.article-heading {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 28px;
+}
+ 
+.article-content p {
+    margin-bottom: 32px;
+}
+ 
+/* ---------- Karussell: 5 Bilder, schräg wie Karten ---------- */
+ 
+.carousel {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+ 
+.carousel img {
+    width: 250px;
+    height: 360px;
+    margin-left: -60px;
+    border-radius: 16px;
+    object-fit: cover;
+    transform: perspective(800px) rotateY(20deg);
+    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.25));
+    transition: transform 0.4s ease, margin 0.4s ease;
+}
+ 
+.carousel img:first-child {
+    margin-left: 0;               /* das erste Bild nicht verschieben */
+}
+
+/* Bild unter der Maus: gerade und mit Abstand links und rechts */
+.carousel img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+ 
+/* Schmaler, eingerückter Teil mit der Liste */
+.article-list {
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+ 
+.article-list p {
+    margin-bottom: 8px;
+}
+ 
+/* Nummerierte Listen etwas einrücken */
+.article-content ol {
+    padding-left: 24px;
+}
+ 
+/* ---------- Pro-Tipps ---------- */
+ 
+.tips {
+    position: relative;                     /* das Schild richtet sich danach aus */
+    max-width: 960px;
+    margin: 80px auto 64px;
+    padding: 24px 32px 20px;
+    background-color: var(--light-green);
+    border-radius: 16px;
+}
+ 
+/* Das schräge grüne Schild oben links */
+.tips-badge {
+    position: absolute;
+    top: -32px;
+    left: -24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background-color: var(--faq-green);
+    color: var(--faq-yellow);
+    border-radius: 8px;
+    font-size: 18px;
+    transform: rotate(-8deg);               /* leicht schräg */
+}
+ 
+.tips-badge img {
+    width: 22px;
+    height: 22px;
+}
+ 
+/* Links im Text */
+.article-content a {
+    color: var(--faq-green);
+    font-weight: 600;
+    text-decoration: none;
+}
+ 
+.article-content a:hover {
+    text-decoration: underline;
+}
+ 
+/* ---------- Fuß: Text, Pfeil und Share-Button ---------- */
+ 
+.article-footer {
+    position: relative;                     /* der Pfeil richtet sich danach aus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+ 
+.article-footer p {
+    font-weight: 600;
+}
+ 
+/* Der geschwungene Pfeil links neben dem Button */
+.share-arrow {
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 150px);                /* von der Mitte aus nach links */
+    width: 80px;
+}
+ 
+.share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    background-color: var(--faq-green);
+    color: var(--faq-white);
+    border: none;
+    border-radius: 999px;                   /* ganz runde Enden */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.share-button img {
+    width: 16px;
+    height: 16px;
+}
+ 
+.share-button:hover {
+    background-color: var(--faq-text);
+}
