@@ -1,0 +1,324 @@
+/* ---------- Grundeinstellungen ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #444444;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+
+.seite {
+  max-width: none;
+  margin: 0;
+  padding: 0 0 10px;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+/* ---------- Kopfbereich ---------- */
+.kategorie {
+  margin: 0 0 5px;
+  color: #3a9a8c;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0 0 15px;
+  color: #f2c14e;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.einleitung {
+  /*margin: 0 0 15px;*/
+  font-size: 1rem;
+}
+
+/* Infozeile unter dem Titel */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #3a9a8c;
+  font-size: 0.8rem;
+}
+
+/* ---------- Kopfbereich ---------- */
+/* Kopfbereich: überschreibt die globale header-Regel */
+.kopf {
+  width: auto;
+  min-height: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.kopf-text {
+  flex: 1;
+}
+
+.autor {
+  flex: 0 0 20px;
+  margin-right: 40px;
+}
+
+
+/* Zwei Spalten füllen die volle Breite */
+.zwei-spalten {
+  display: flex;
+  gap: 30px;
+}
+
+.zwei-spalten .spalte {
+  flex: 1 1 0;
+}
+
+.zwei-spalten .bild {
+  width: 100%;
+  min-height: 0;
+}
+
+/* Share-Bereich mittig */
+.article-footer {
+  margin: 40px auto;
+}
+
+/* ---------- Autorenkarte ---------- */
+.autor {
+  flex: 0 0 200px;
+  margin-left: 0;
+  padding: 15px;
+  background: #d9ebe6;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.autor-bild {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 8px;
+  background: #3a9a8c;
+  border-radius: 50%;
+  object-fit: cover; 
+  display: block;
+}
+
+
+.autor-name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.autor-rolle {
+  margin: 0 0 8px;
+  color: #3a9a8c;
+}
+
+.autor-text {
+  margin: 0;
+}
+
+/* ---------- Textabschnitte ---------- */
+.text p {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+}
+
+.text {
+  margin: 25px 0;
+}
+
+/* ---------- Ãœberschriften der Abschnitte ---------- */
+h2 {
+  margin: 0 0 12px;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.abschnitt {
+  margin: 35px 0;
+}
+
+.bild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: #f4f8f7;
+  border: 2px dashed #3a9a8c;
+  border-radius: 16px;
+  color: #3a9a8c;
+  font-size: 0.9rem;
+}
+
+.bild-gross {
+  max-width: 480px;
+  min-height: 260px;
+  margin: 0 auto;
+}
+
+.bild img,
+img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+/* ---------- Zwei Spalten ---------- */
+.zwei-spalten {
+  display: flex;
+  gap: 30px;
+  margin: 35px 0;
+}
+
+.spalte {
+  flex: 1;
+}
+
+.spalte p {
+  font-size: 0.85rem;
+}
+
+/* ---------- Fussbereich ---------- */
+.fuss {
+  margin-top: 40px;
+  text-align: center;
+  color: #3a9a8c;
+  font-size: 0.85rem;
+}
+
+.knopf {
+  display: inline-block;
+  padding: 8px 28px;
+  background: #3a9a8c;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.knopf:hover {
+  background: #2d7a6f;
+}
+
+/* ---------- Content nach links, Text bleibt an alter Position ---------- */
+/* Steht bewusst nach den Grundregeln, damit margin-left gewinnt */
+.kategorie,
+h1,
+.einleitung,
+.meta,
+.text,
+.fuss {
+  margin-left: 200px;
+  max-width: 800px;
+}
+
+/* ---------- Zwei Bilder unten: kleiner und am Text ausgerichtet ---------- */
+.zwei-spalten {
+  display: flex;
+  align-items: stretch;      /* beide Spalten gleich hoch */
+  gap: 30px;
+  margin: 35px 0;
+}
+
+.zwei-spalten .spalte {
+  flex: 1 1 0;               /* beide Spalten teilen sich die Textbreite */
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Bild immer unten, egal wie lang der Text ist */
+.zwei-spalten .bild {
+  margin-top: auto;
+  width: 100%;
+  align-content: center;
+  max-width: none;
+  min-height: 0;
+}
+
+
+text,
+.zwei-spalten {
+  margin-left: 200px;
+  max-width: 800px;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+  background: #68a58a;
+  color: #ffffff;
+  font-size: 0.85rem;
+  padding: 20px max(20px, calc((100% - 1000px) / 2 + 20px));
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__left a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.article-footer {
+  margin: 40px 0 40px 200px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ---------- Hintergrund weiss ---------- */
+/* Falls der Kopfbereich in einem Wrapper liegt, dessen Klasse hier fehlt:
+   die Klasse des gruenen Elements ergaenzen */
+html,
+body,
+.seite,
+.kopf,
+.hero,
+.kopfbereich,
+.seitenkopf {
+  background: #ffffff;
+}
+
+/* ---------- Handy-Ansicht (schmale Bildschirme) ---------- */
+@media (max-width: 600px) {
+  .kopf,
+  .zwei-spalten {
+    flex-direction: column;
+  }
+
+  .autor {
+    flex: none;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
