@@ -173,74 +173,80 @@
       </section>
 
       <footer class="article-footer">
-        <p>
-          Folge mir für mehr Content und teile den Artikel mit deinen Freunden!
-        </p>
+  <p>
+    Folge mir für mehr Content und teile den Artikel mit deinen Freunden!
+  </p>
 
+  <img
+    src="./img/web/arrow.png"
+    alt=""
+    class="share-arrow">
+
+  <div class="share-actions">
+    <details class="share-details">
+      <summary class="share-button">
+        <img src="./assets/icon/share gelb.png" alt="">
+        <span>Share</span>
+      </summary>
+
+      <div class="share-expanded">
         <img
-          src="./img/web/arrow.png"
+          src="./assets/icon/share.png"
           alt=""
-          class="share-arrow"
-        >
+          class="share-expanded__icon">
 
-        <div class="share-actions">
-          <button type="button" class="share-button">
-            <img src="./assets/icon-share-yellow.png" alt="">
-            Share
-          </button>
+        <div class="share-links" aria-label="Artikel teilen auf">
+          <a
+            class="share-link share-link--linkedin"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
 
-          <div class="share-links" aria-label="Artikel teilen auf">
-            <a
-              class="share-link share-link--linkedin"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >LinkedIn</a>
-
-            <a
-              class="share-link share-link--whatsapp"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >WhatsApp</a>
-          </div>
+          <a
+            class="share-link share-link--whatsapp"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">WhatsApp</a>
         </div>
-      </footer>
-    </article>
-  </main>
+      </div>
+    </details>
+  </div>
+</footer>
+</article>
+</main>
 
-  <footer class="site-footer">
-    <div class="footer__left">
-      <span>© Travel Blog 2026</span>
-      <a href="./impressum.html">Impressum</a>
-      <a href="#">Cookie Preferences</a>
-    </div>
+<footer class="site-footer">
+  <div class="footer__left">
+    <span>© Travel Blog 2026</span>
+    <a href="./impressum.html">Impressum</a>
+    <a href="#">Cookie Preferences</a>
+  </div>
 
-    <div class="footer__social">
-      <a href="#" aria-label="TikTok">
-        <img src="./img/web/Tiktok_icon.png" alt="">
-      </a>
-      <a href="#" aria-label="YouTube">
-        <img src="./img/web/youtube.png" alt="">
-      </a>
-      <a href="#" aria-label="Facebook">
-        <img src="./img/web/facebook.png" alt="">
-      </a>
-      <a href="#" aria-label="Instagram">
-        <img src="./img/web/Instagram.png" alt="">
-      </a>
-    </div>
-  </footer>
+  <div class="footer__social">
+    <a href="#" aria-label="TikTok">
+      <img src="./img/web/Tiktok_icon.png" alt="">
+    </a>
+    <a href="#" aria-label="YouTube">
+      <img src="./img/web/youtube.png" alt="">
+    </a>
+    <a href="#" aria-label="Facebook">
+      <img src="./img/web/facebook.png" alt="">
+    </a>
+    <a href="#" aria-label="Instagram">
+      <img src="./img/web/Instagram.png" alt="">
+    </a>
+  </div>
+</footer>
 
-  <script>
-    const pageUrl = window.location.href;
-    const shareText = `${document.title} ${pageUrl}`;
+<script>
+  const pageUrl = window.location.href;
+  const shareText = `${document.title} ${pageUrl}`;
 
-    document.querySelector(".share-link--linkedin").href =
-      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
+  document.querySelector(".share-link--linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
 
-    document.querySelector(".share-link--whatsapp").href =
-      `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
-  </script>
+  document.querySelector(".share-link--whatsapp").href =
+    `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+</script>
 </body>
 </html>
