@@ -869,6 +869,49 @@ img {
 .knopf:hover {
   background: #2d7a6f;
 }
+.privacy-consent input[type="checkbox"] {
+  accent-color: #3a9a8c;
+}
+
+/* Nicht angeklickt: weiß, beim Hover gelb */
+.privacy-consent input[type="checkbox"]:not(:checked) {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background: #fff;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.privacy-consent input[type="checkbox"]:not(:checked):hover {
+  background: #f1c941;
+  border-color: #f1c941;
+}
+
+/* Angeclickt: grün */
+.privacy-consent input[type="checkbox"]:checked {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #3a9a8c;
+  border-radius: 2px;
+  background: #3a9a8c;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/*  weißer Haken */
+.privacy-consent input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  color: #fff;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+}
+
 
 /* FOOTER */
 /* ---------- Footer ---------- */
