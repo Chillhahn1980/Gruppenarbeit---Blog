@@ -257,6 +257,52 @@ text,
   margin-left: 200px;
   max-width: 800px;
 }
+/* ---------- Fuß: Text, Pfeil und Share-Button ---------- */
+ 
+.article-footer {
+    position: relative;                     /* der Pfeil richtet sich danach aus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+ 
+.article-footer p {
+    font-weight: 600;
+}
+ 
+/* Der geschwungene Pfeil links neben dem Button */
+.share-arrow {
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 150px);                /* von der Mitte aus nach links */
+    width: 80px;
+}
+ 
+.share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    background-color: var(--faq-green);
+    color: var(--faq-white);
+    border: none;
+    border-radius: 999px;                   /* ganz runde Enden */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.share-button img {
+    width: 16px;
+    height: 16px;
+}
+ 
+.share-button:hover {
+    background-color: var(--faq-text);
+}
 
 /* ---------- Footer ---------- */
 
