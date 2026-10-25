@@ -206,11 +206,11 @@
     justify-content: flex-start;
     align-items: center;
     color: var(--faq-green);
-    font-size: 28px;
+    font-size: 48px;
 }
 
 .highlights__intro {
-    max-width: 600px;
+    max-width:1200px;
     margin: 0 auto;
 }
 
@@ -219,7 +219,7 @@
 .slider {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   aspect-ratio: 660 / 293;
   overflow: hidden;
@@ -450,13 +450,13 @@
     gap: 8px;
     color: #4EA487;
     font-family: "Arima", sans-serif;
-    font-size: 32px;
+    font-size: 48px;
     line-height: 1.2;
 }
 
 .contact-form h2 img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
