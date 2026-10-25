@@ -205,12 +205,12 @@
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-     color: var(--faq-green);
+    color: var(--faq-green);
     font-size: 28px;
 }
 
 .highlights__intro {
-    max-width: 540px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -219,7 +219,7 @@
 .slider {
   position: relative;
   width: 100%;
-  max-width: 660px;
+  max-width: 960px;
   margin: 0 auto;
   aspect-ratio: 660 / 293;
   overflow: hidden;
@@ -253,10 +253,10 @@
 /* Text-Box (Glas-Effekt) */
 .slide__box {
   position: absolute;
-  top: 30px;
-  left: 22px;
-  right: 154px;
-  padding: 10px 14px 12px;
+  top: 50px;              
+  left: 96px;
+  right: 254px;           /* größerer Wert = schmalerer Kasten */
+  padding: 8px 12px 10px;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -274,18 +274,18 @@
 }
 
 .slide__title {
-  margin: 0 0 6px;
-  font-family: "Fredoka", system-ui, sans-serif;
+  margin: 0 0 14px;              /* Abstand nach unten zum Slidertext */
+  font-family: "Palanquin Dark", system-ui, sans-serif;
   font-weight: 600;
-  font-size: 1.55rem;
-  line-height: 1.1;
+  font-size: 2.15rem;
+  line-height: 1.2;              
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 .slide__text {
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.2;
+  font-size: 1.95rem;
+  line-height: 48px;
 }
 
 /* Dots */
@@ -869,16 +869,59 @@ img {
 .knopf:hover {
   background: #2d7a6f;
 }
+.privacy-consent input[type="checkbox"] {
+  accent-color: #3a9a8c;
+}
 
-/* FOOTER */
+/* Nicht angeklickt: weiß, beim Hover gelb */
+.privacy-consent input[type="checkbox"]:not(:checked) {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background: #fff;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.privacy-consent input[type="checkbox"]:not(:checked):hover {
+  background: #f1c941;
+  border-color: #f1c941;
+}
+
+/* Angeclickt: grün */
+.privacy-consent input[type="checkbox"]:checked {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #3a9a8c;
+  border-radius: 2px;
+  background: #3a9a8c;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/*  weißer Haken */
+.privacy-consent input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  color: #fff;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+}
+
+
 /* ---------- Footer ---------- */
 
 .site-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 200px;
-  background: #68a58a;
+  align-items:flex-end;
+  padding: 20px 150px;
+  min-height: 128px;
+  background: #4EA487;
   color: #ffffff;
   font-size: 0.85rem;
 }
