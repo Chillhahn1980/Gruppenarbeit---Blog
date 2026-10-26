@@ -196,7 +196,7 @@ img {
 /* ---------- Fussbereich ---------- */
 .fuss {
   margin-top: 40px;
-  text-align: center;
+  text-align:end;
   color: #3a9a8c;
   font-size: 0.85rem;
 }
@@ -257,6 +257,8 @@ text,
   margin-left: 200px;
   max-width: 800px;
 }
+
+
 /* ---------- Fuß: Text, Pfeil und Share-Button ---------- */
  
 .article-footer {
@@ -304,53 +306,7 @@ text,
     background-color: var(--faq-text);
 }
 
-/* ---------- Footer ---------- */
 
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 200px;
-  background: #68a58a;
-  color: #ffffff;
-  font-size: 0.85rem;
-  padding: 20px max(20px, calc((100% - 1000px) / 2 + 20px));
-}
-
-.footer__left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer__left a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer__social {
-  display: flex;
-  gap: 15px;
-}
-
-.article-footer {
-  margin: 40px 0 40px 200px;
-  max-width: 800px;
-  text-align: center;
-}
-
-/* ---------- Hintergrund weiss ---------- */
-/* Falls der Kopfbereich in einem Wrapper liegt, dessen Klasse hier fehlt:
-   die Klasse des gruenen Elements ergaenzen */
-html,
-body,
-.seite,
-.kopf,
-.hero,
-.kopfbereich,
-.seitenkopf {
-  background: #ffffff;
-}
 
 /* ---------- Handy-Ansicht (schmale Bildschirme) ---------- */
 @media (max-width: 600px) {
