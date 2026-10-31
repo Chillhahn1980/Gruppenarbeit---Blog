@@ -948,10 +948,16 @@ img {
   text-align: center;
 }
 
+/* Mobile Navigation am Desktop ausblenden */
+nav.mobile-bottom-nav {
+    display: none;
+}
+
 /* ==========================================
    MOBILE - HEADER, KONTAKT UND FOOTER
    Nach Figma
 ========================================== */
+
 
 @media screen and (max-width: 700px) {
 
