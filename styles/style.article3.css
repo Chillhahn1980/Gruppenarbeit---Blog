@@ -32,7 +32,7 @@ h1 {
   margin: 0 0 15px;
   color: #f2c14e;
   font-family: Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 64px;
   line-height: 1.2;
 }
 
@@ -52,7 +52,7 @@ h1 {
   font-size: 0.8rem;
 }
 
-/* Kopfbereich: Ã¼berschreibt die globale header-Regel */
+/* Kopfbereich: überschreibt die globale header-Regel */
 .kopf {
   width: auto;
   min-height: 0;
@@ -69,7 +69,7 @@ h1 {
   min-width: 0;
 }
 
-/* Zwei Spalten fÃ¼llen die volle Breite */
+/* Zwei Spalten faellen die volle Breite */
 .zwei-spalten {
   display: flex;
   gap: 30px;
@@ -128,11 +128,11 @@ h1 {
 /* ---------- Textabschnitte ---------- */
 .text p {
   margin: 0 0 12px;
-  font-size: 0.9rem;
+  font-size: 24px;
 }
 
 .text {
-  margin: 25px 0;
+  margin: 24px 0;
 }
 
 /* ---------- Ãœberschriften der Abschnitte ---------- */
@@ -253,7 +253,7 @@ h1,
 }
 
 
-/* ---------- FuÃŸ: Text, Pfeil und Share-Button ---------- */
+/* ---------- Footer: Text, Pfeil und Share-Button ---------- */
 .article-footer {
   position: relative;                     /* der Pfeil richtet sich danach aus */
   display: flex;
