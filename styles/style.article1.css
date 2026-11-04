@@ -377,7 +377,7 @@
         width: 14px;
         height: 14px;
         border-radius: 50%;
-        background: var(--faq-white);
+        background: var(--light-green);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         transition: width 0.3s ease, background 0.3s ease;
