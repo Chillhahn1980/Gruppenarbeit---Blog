@@ -206,11 +206,11 @@
     justify-content: flex-start;
     align-items: center;
     color: var(--faq-green);
-    font-size: 28px;
+    font-size: 48px;
 }
 
 .highlights__intro {
-    max-width: 600px;
+    max-width:1200px;
     margin: 0 auto;
 }
 
@@ -219,7 +219,7 @@
 .slider {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   aspect-ratio: 660 / 293;
   overflow: hidden;
@@ -450,13 +450,13 @@
     gap: 8px;
     color: #4EA487;
     font-family: "Arima", sans-serif;
-    font-size: 32px;
+    font-size: 48px;
     line-height: 1.2;
 }
 
 .contact-form h2 img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
@@ -948,26 +948,1373 @@ img {
   text-align: center;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 700px) {
-  .site-header { padding: 10px 20px; gap: 20px; }
-  .main-nav { gap: 18px; }
-  .hero { height: 140px; }
-  .form__row { grid-template-columns: 1fr; }
-  .site-footer { flex-direction: column; gap: 12px; }
-  .footer__left { gap: 16px; flex-wrap: wrap; justify-content: center; }
+/* Mobile Navigation am Desktop ausblenden */
+nav.mobile-bottom-nav {
+    display: none;
 }
 
-@media (max-width: 640px) {
-  .slider {
-    aspect-ratio: 4 / 5;
-    --radius: 40px;
-  }
+/* ==========================================
+   MOBILE - HEADER, KONTAKT UND FOOTER
+   Nach Figma
+========================================== */
 
-  .slide__box {
-    right: 22px;
-    top: 20px;
-  }
 
-  .slide__title { font-size: 1.3rem; }
+@media screen and (max-width: 700px) {
+
+    /* HEADER */
+
+    body > header {
+        width: 100%;
+        height: 80px;
+        min-height: 80px;
+        background-color: #4EA487;
+    }
+
+    body > header .navbar {
+        width: 100%;
+        max-width: 100%;
+        height: 80px;
+        min-height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 8px 16px;
+        gap: 0;
+    }
+
+    body > header .logo-img {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    body > header .navbar ul {
+        display: none;
+    }
+
+    /* KONTAKTFORMULAR */
+
+    .contact {
+        width: 100%;
+        min-height: 0;
+        margin: 0 auto;
+        padding: 35px 18px 45px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        width: 100%;
+        min-height: 0;
+        margin: 0 0 25px;
+
+        color: #4EA487;
+        font-family: "Arima", serif;
+        font-size: clamp(22px, 6vw, 30px);
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .contact-form h2 img {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    .contact-form h2 span,
+    .contact-form h2 p {
+        margin: 0;
+    }
+
+    /* Einleitung wie im Figma ausblenden */
+
+    .contact-intro {
+        display: none;
+    }
+
+    /* Felder untereinander */
+
+    .contact-fields {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-fields label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 0;
+
+        font-size: 13px;
+    }
+
+    .contact-fields input {
+        width: 100%;
+        height: 38px;
+        min-height: 38px;
+    }
+
+    .contact-fields textarea {
+        width: 100%;
+        min-height: 90px;
+    }
+
+    .message-field {
+        grid-column: 1;
+    }
+
+    /* Datenschutz */
+
+    .privacy-consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 7px;
+
+        width: 100%;
+        margin: 20px 0;
+
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .privacy-consent input {
+        flex-shrink: 0;
+    }
+
+    /* Senden-Button */
+
+    .contact-form button {
+        width: 110px;
+        min-height: 36px;
+        margin: 0 auto;
+
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+        width: 100%;
+        min-height: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        gap: 12px;
+
+        padding: 20px 18px;
+        background-color: #4EA487;
+
+        color: #ffffff;
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .footer__left {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 8px 16px;
+        width: 100%;
+    }
+
+    .footer__left a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .footer__social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer__social img {
+        display: block;
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    /* FIXIERTE MOBILE NAVIGATION */
+
+    nav.mobile-bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 100%;
+        min-height: 54px;
+        padding: 6px 12px;
+
+        background-color: #F1C953;
+        z-index: 1000;
+    }
+
+    nav.mobile-bottom-nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 44px;
+        height: 44px;
+
+        color: #4EA487;
+        font-size: 24px;
+        text-decoration: none;
+    }
 }
+
+
+/* ==========================================
+   TABLET: 701px - 1024px
+========================================== */
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+
+    /* HEADER */
+
+    body > header {
+        min-height: 95px;
+    }
+
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        min-height: 95px;
+        padding: 10px 5%;
+        gap: 25px;
+    }
+
+    .logo-img {
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+    }
+
+    .navbar ul {
+        gap: 25px;
+    }
+
+    /* HERO */
+
+    .hero {
+        height: 450px;
+    }
+
+    .hero-yellow {
+        width: 48%;
+        height: 100%;
+        animation: none;
+    }
+
+    .yellow-fill {
+        height: 100%;
+    }
+
+    .hero-shape {
+        width: 250px;
+        height: 100%;
+        clip-path: none;
+        border-radius: 0 55% 55% 0;
+    }
+
+    .hero-text {
+        top: 95px;
+        left: 5%;
+        width: 35%;
+        animation: none;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(35px, 5vw, 50px);
+    }
+
+    .hero-text p {
+        font-size: clamp(17px, 2.2vw, 23px);
+        line-height: 1.4;
+    }
+
+    .badge {
+        top: 60%;
+        left: 42%;
+        width: 115px;
+        height: 115px;
+        animation: none;
+    }
+
+    /* HIGHLIGHTS */
+
+    .highlights {
+        width: 100%;
+        padding: 45px 30px;
+    }
+
+    .highlights__header {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .highlights__title {
+        font-size: 40px;
+    }
+
+    .highlights__intro {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* SLIDER
+       Die Slider-Umschaltung bleibt erhalten */
+
+    .slider {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .slide__box {
+        top: 10%;
+        left: 8%;
+        right: 18%;
+        padding: 18px;
+    }
+
+    .slide__title {
+        font-size: clamp(20px, 3vw, 30px);
+    }
+
+    .slide__text,
+    .slide__box p,
+    .slide__box a {
+        font-size: clamp(16px, 2vw, 22px);
+        line-height: 1.5;
+    }
+
+    /* FAQ */
+
+    .faq {
+        padding: 45px 35px;
+    }
+
+    .faq-title {
+        font-size: 48px;
+    }
+
+    .faq-item {
+        margin-bottom: 25px;
+    }
+
+    .faq-item summary {
+        font-size: 22px;
+    }
+
+    .faq-item p {
+        font-size: 16px;
+    }
+
+    /* KONTAKT */
+
+    .contact {
+        width: 90%;
+    }
+
+    .contact-form h2 {
+        font-size: 40px;
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+        padding: 25px 40px;
+    }
+}
+
+/* ==========================================
+   MOBILE HERO - CAPPADOCIA
+   Figma-Animation
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 540px;
+        min-height: 540px;
+        overflow: hidden;
+
+        background:
+            url('../img/web/header_photo.png')
+            center center / cover no-repeat;
+    }
+
+    /* Gelbe Fläche mit geschwungener Kante */
+
+    .hero-yellow {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        z-index: 2;
+
+        animation:
+            mobileGelbZurueck 4s ease-in-out 2s both;
+    }
+
+    .yellow-fill {
+        flex: 1;
+        height: 100%;
+        background: #F0C550;
+    }
+
+    .hero-shape {
+        display: block;
+
+        width: 45%;
+        height: 100%;
+
+        flex-shrink: 0;
+        margin-left: -2px;
+
+        background: #F0C550;
+
+        clip-path: ellipse(
+            85% 65% at 0% 50%
+        );
+    }
+
+    @keyframes mobileGelbZurueck {
+
+        0%, 35% {
+            width: 150%;
+        }
+
+        100% {
+            width: 48%;
+        }
+    }
+
+    /* Cappadocia-Text */
+
+    .hero-text {
+        position: absolute;
+
+        top: 50%;
+        left: 8%;
+
+        width: 84%;
+        max-width: none;
+
+        transform: translateY(-50%);
+
+        z-index: 3;
+
+        animation:
+            mobileTextZurueck 4s ease-in-out 2s both;
+    }
+
+    @keyframes mobileTextZurueck {
+
+        0%, 35% {
+            opacity: 1;
+            translate: 0 0;
+        }
+
+        100% {
+            opacity: 0;
+            translate: -120% 0;
+        }
+    }
+
+    .hero-text h1 {
+        font-family: "Arima", serif;
+        font-size: clamp(32px, 8vw, 42px);
+        line-height: 1.2;
+
+        margin: 0 0 20px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 0;
+    }
+    .hero-text h1,
+    .hero-text p {
+    animation: none;
+}
+
+    /* Sticker */
+
+    .badge {
+        position: absolute;
+
+        top: 28%;
+        left: 15%;
+
+        width: 115px;
+        height: 115px;
+
+        z-index: 4;
+
+        animation:
+            mobileSticker 0.8s ease-out 6s both;
+    }
+
+    @keyframes mobileSticker {
+
+        from {
+            opacity: 0;
+            transform: translateY(150px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .badge-text {
+        width: 90%;
+    }
+
+    .badge-flag {
+        width: 30%;
+    }
+}
+
+
+
+/* ==========================================
+   KLEINE SMARTPHONES: BIS 380px
+========================================== */
+
+@media screen and (max-width: 380px) {
+
+    .navbar {
+        padding: 8px 12px;
+    }
+
+    .logo-img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero {
+        height: 520px;
+        min-height: 520px;
+    }
+
+    .hero-text {
+        padding: 0 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .slider {
+        height: 390px;
+    }
+
+    .slide__title {
+        font-size: 17px;
+    }
+
+    .slide__box p,
+    .slide__box a {
+        font-size: 13px;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* ==========================================
+   BARRIEREFREIHEIT
+========================================== */
+
+@media (prefers-reduced-motion: reduce) and (max-width: 700px) {
+
+    .hero-yellow {
+        animation: none !important;
+        width: 48%;
+        transform: none;
+    }
+
+    .hero-text {
+        animation: none !important;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .badge {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* ==========================================
+   MOBILE HIGHLIGHTS - FIGMA
+   BIS 700px
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* HIGHLIGHTS-BEREICH */
+
+    .highlights {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 35px 18px 45px;
+        background: #ffffff;
+        text-align: center;
+    }
+
+    .highlights__header {
+        width: 100%;
+        min-height: 0;
+        margin: 0 0 18px;
+        padding: 0;
+        background: transparent;
+    }
+
+    .highlights__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        margin: 0;
+        color: #4EA487;
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.2;
+    }
+
+    .highlights__title p {
+        margin: 0;
+    }
+
+    .highlights__title img {
+        display: block;
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+
+    .highlights__icon {
+        display: none;
+    }
+
+    .highlights__intro {
+        display: none;
+    }
+
+    /* SLIDER-GRÖSSE */
+
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 340px;
+        height: 450px;
+        aspect-ratio: auto;
+
+        margin: 0 auto;
+        overflow: hidden;
+
+        border-radius: 0 48px 0 0;
+    }
+    
+
+
+    /* Bestehende Radio-Buttons und
+       Slider-Umschaltung bleiben erhalten */
+
+   .slider__track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+
+    .slide__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* TRANSPARENTE TEXTBOX */
+
+    .slide__box {
+        position: absolute;
+        top: 35px;
+        left: 9%;
+        right: 9%;
+
+        width: auto;
+        max-height: 72%;
+        padding: 12px 10px;
+
+        overflow-y: auto;
+        color: #ffffff;
+        background: rgba(255,255,255,0.24);
+        border: 1px solid rgba(255,255,255,0.45);
+        backdrop-filter: blur(2px);
+
+        text-align: left;
+    }
+
+    .slide__title {
+        margin: 0 0 8px;
+        font-size: clamp(16px, 4.5vw, 20px);
+        line-height: 1.2;
+    }
+
+    .slide__text,
+    .slide__box p,
+    .slide__box a {
+        margin: 0;
+        font-size: clamp(12px, 3.4vw, 15px);
+        line-height: 1.4;
+    }
+
+    /* NAVIGATIONSPUNKTE */
+
+    .slider__dots {
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        z-index: 10;
+    }
+
+    .slider__dots label {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+    }
+
+    #slide1:checked ~ .slider__dots label:nth-child(1),
+    #slide2:checked ~ .slider__dots label:nth-child(2),
+    #slide3:checked ~ .slider__dots label:nth-child(3),
+    #slide4:checked ~ .slider__dots label:nth-child(4) {
+        width: 20px;
+        border-radius: 12px;
+        background: #F1C953;
+    }
+    
+#slide1:checked ~ .slider__track {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slider__track {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slider__track {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slider__track {
+    transform: translateX(-300%);
+}
+
+}
+
+/* ==========================================
+   KLEINE SMARTPHONES BIS 380px
+========================================== */
+
+@media screen and (max-width: 380px) {
+
+    .highlights {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .slide__box {
+        top: 25px;
+        padding: 10px;
+    }
+
+    .slide__title {
+        font-size: 16px;
+    }
+
+    .slide__box p,
+    .slide__box a {
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   MOBILE FAQ - FIGMA
+   BIS 700px
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* FAQ-GESAMTBEREICH */
+
+    .faq {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 35px 18px 45px;
+        background: #ffffff;
+    }
+
+    /* ÜBERSCHRIFT */
+
+    .faq-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        margin: 0 0 30px;
+        color: #4EA487;
+
+        font-family: "Arima", serif;
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .faq-icon {
+        display: block;
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    /* GELBE FRAGEKÄSTEN */
+
+    .faq-item {
+        width: 100%;
+        margin: 0 0 14px;
+        border-radius: 10px;
+        background-color: #F1C953;
+        color: #54370D;
+        overflow: hidden;
+    }
+
+    /* FRAGEN */
+
+    .faq-item summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+
+        padding: 14px 12px;
+
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: left;
+
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* PFEIL RECHTS */
+
+    .faq-item summary::after {
+        content: "";
+        display: block;
+        flex-shrink: 0;
+
+        width: 9px;
+        height: 9px;
+
+        border-right: 2px solid #54370D;
+        border-bottom: 2px solid #54370D;
+
+        transform: translateY(-3px) rotate(45deg);
+        transition: transform 0.3s ease;
+    }
+
+    /* PFEIL BEI GEÖFFNETER FRAGE */
+
+    .faq-item[open] summary::after {
+        transform: translateY(3px) rotate(-135deg);
+    }
+
+    /* ANTWORT */
+
+    .faq-item p {
+        margin: 0 10px 10px;
+        padding: 12px;
+
+        background: #ffffff;
+        border-radius: 6px;
+
+        color: #54370D;
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    /* LETZTER FRAGEKASTEN */
+
+    .faq-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* ==========================================
+   MOBILE KONTAKTFORMULAR - FIGMA
+   BIS 700px
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* GESAMTBEREICH */
+
+    .contact {
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        margin: 0 auto;
+        padding: 35px 18px 55px;
+        background: #ffffff;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ÜBERSCHRIFT */
+
+    .contact-form h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        width: 100%;
+        min-height: 0;
+        margin: 0 0 28px;
+
+        color: #4EA487;
+        font-family: "Arima", serif;
+        font-size: clamp(23px, 6vw, 30px);
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .contact-form h2 img {
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    .contact-form h2 p {
+        margin: 0;
+    }
+
+    /* EINLEITUNG MOBILE AUSBLENDEN */
+
+    .contact-intro {
+        display: none;
+    }
+
+    /* FORMULARFELDER */
+
+    .contact-fields {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-fields label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 0;
+
+        color: #54370D;
+        font-family: "Palanquin", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .contact-fields input,
+    .contact-fields textarea {
+        display: block;
+        width: 100%;
+
+        padding: 6px 0;
+        border: none;
+        border-bottom: 1px solid #B9A88F;
+        border-radius: 0;
+
+        background: transparent;
+        color: #54370D;
+        font: inherit;
+        outline: none;
+    }
+
+    .contact-fields input {
+        height: 38px;
+        min-height: 38px;
+    }
+
+    .contact-fields textarea {
+        height: 70px;
+        min-height: 70px;
+        resize: vertical;
+    }
+
+    .contact-fields input:focus,
+    .contact-fields textarea:focus {
+        border-bottom: 2px solid #4EA487;
+    }
+
+    .message-field {
+        grid-column: 1;
+    }
+
+    /* DATENSCHUTZ */
+
+    .privacy-consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+
+        width: 100%;
+        margin: 18px 0 20px;
+
+        color: #54370D;
+        font-family: "Palanquin", sans-serif;
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .privacy-consent input[type="checkbox"] {
+        flex-shrink: 0;
+        width: 13px;
+        height: 13px;
+        margin: 2px 0 0;
+    }
+
+    .privacy-consent a {
+        color: #4EA487;
+    }
+
+    /* SENDEN-BUTTON */
+
+    .contact-form button {
+        display: block;
+        width: 110px;
+        min-height: 36px;
+        margin: 0 auto;
+
+        padding: 5px 16px;
+        border: 1px solid #B9A88F;
+        border-radius: 30px;
+
+        background: #ffffff;
+        color: #737373;
+
+        font-family: "Arima", serif;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background: #4EA487;
+        color: #ffffff;
+    }
+
+    .contact-form button:not(:disabled) {
+    border-color: #B9A88F;
+    color: #737373;
+}
+
+.contact-form button:not(:disabled):hover {
+    background: #4EA487;
+    color: #ffffff;
+}
+}
+
+    body nav.mobile-bottom-nav img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+
+/* ==========================================
+   MOBILE FOOTER - FIGMA
+   BIS 700px
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* GRÜNER FOOTER */
+
+    .site-footer {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 95px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+
+        gap: 10px;
+        margin: 0;
+        padding: 15px 12px;
+
+        background: #4EA487;
+        color: #ffffff;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    /* LINKS */
+
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        gap: 3px;
+        min-width: 0;
+    }
+
+    .footer__left a,
+    .footer__left span {
+        color: #ffffff;
+        font-size: 10px;
+        line-height: 1.3;
+        text-decoration: none;
+    }
+
+    /* SOCIAL MEDIA */
+
+    .footer__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        flex-shrink: 0;
+        gap: 8px;
+    }
+
+    .footer__social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__social img {
+        display: block;
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    /* GELBE MOBILE NAVIGATION */
+
+    nav.mobile-bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        box-sizing: border-box;
+        width: 100%;
+        height: 54px;
+        min-height: 54px;
+
+        margin: 0;
+        padding: 5px 12px;
+
+        background: #F1C953;
+        z-index: 1000;
+    }
+
+    nav.mobile-bottom-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        color: #4EA487;
+        font-family: "Segoe UI Symbol", sans-serif;
+        font-size: 25px;
+        line-height: 1;
+        text-decoration: none;
+    }
+
+    nav.mobile-bottom-nav a:hover {
+        color: #327B65;
+    }
+
+    /* PLATZ FÜR DIE FIXIERTE NAVIGATION */
+
+    body {
+        padding-bottom: 54px;
+    }
+
+    .footer__left span {
+    order: 3;
+}
+
+.footer__left a:first-of-type {
+    order: 1;
+}
+
+.footer__left a:last-of-type {
+    order: 2;
+}
+.site-footer {
+    min-height: 75px;
+    padding: 12px 10px;
+    align-items: flex-end;
+}
+
+.footer__left {
+    gap: 2px;
+}
+
+.footer__social {
+    gap: 8px;
+}
+
+.footer__social img {
+    width: 18px;
+    height: 18px;
+}
+}
+
+
+
+/* MOBILE NAVIGATION - KORREKTUR */
+
+@media screen and (max-width: 700px) {
+
+    body nav.mobile-bottom-nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 54px;
+        margin: 0;
+        padding: 5px 12px;
+
+        background-color: #F1C953;
+        z-index: 9999;
+        box-sizing: border-box;
+    }
+
+    body nav.mobile-bottom-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+    }
+  }

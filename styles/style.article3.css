@@ -32,12 +32,11 @@ h1 {
   margin: 0 0 15px;
   color: #f2c14e;
   font-family: Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 64px;
   line-height: 1.2;
 }
 
 .einleitung {
-  /*margin: 0 0 15px;*/
   font-size: 1rem;
 }
 
@@ -53,7 +52,6 @@ h1 {
   font-size: 0.8rem;
 }
 
-/* ---------- Kopfbereich ---------- */
 /* Kopfbereich: überschreibt die globale header-Regel */
 .kopf {
   width: auto;
@@ -68,15 +66,10 @@ h1 {
 
 .kopf-text {
   flex: 1;
+  min-width: 0;
 }
 
-.autor {
-  flex: 0 0 20px;
-  margin-right: 40px;
-}
-
-
-/* Zwei Spalten füllen die volle Breite */
+/* Zwei Spalten faellen die volle Breite */
 .zwei-spalten {
   display: flex;
   gap: 30px;
@@ -100,6 +93,7 @@ h1 {
 .autor {
   flex: 0 0 200px;
   margin-left: 0;
+  margin-right: 40px;
   padding: 15px;
   background: #d9ebe6;
   border-radius: 12px;
@@ -107,16 +101,15 @@ h1 {
   font-size: 0.75rem;
 }
 
+.autor img,
 .autor-bild {
   width: 70px;
   height: 70px;
   margin: 0 auto 8px;
-  background: #3a9a8c;
   border-radius: 50%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 }
-
 
 .autor-name {
   margin: 0;
@@ -135,11 +128,11 @@ h1 {
 /* ---------- Textabschnitte ---------- */
 .text p {
   margin: 0 0 12px;
-  font-size: 0.9rem;
+  font-size: 24px;
 }
 
 .text {
-  margin: 25px 0;
+  margin: 24px 0;
 }
 
 /* ---------- Ãœberschriften der Abschnitte ---------- */
@@ -175,6 +168,7 @@ h2 {
 .bild img,
 img {
   max-width: 100%;
+  height: auto;
   border-radius: 16px;
 }
 
@@ -196,7 +190,7 @@ img {
 /* ---------- Fussbereich ---------- */
 .fuss {
   margin-top: 40px;
-  text-align: center;
+  text-align: end;
   color: #3a9a8c;
   font-size: 0.85rem;
 }
@@ -251,120 +245,233 @@ h1,
   min-height: 0;
 }
 
-
-text,
+/* war vorher "text," ohne Punkt, dadurch wirkungslos */
+.text,
 .zwei-spalten {
   margin-left: 200px;
   max-width: 800px;
 }
-/* ---------- Fuß: Text, Pfeil und Share-Button ---------- */
- 
+
+
+/* ---------- Footer: Text, Pfeil und Share-Button ---------- */
 .article-footer {
-    position: relative;                     /* der Pfeil richtet sich danach aus */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-}
- 
-.article-footer p {
-    font-weight: 600;
-}
- 
-/* Der geschwungene Pfeil links neben dem Button */
-.share-arrow {
-    position: absolute;
-    bottom: -5px;
-    left: calc(50% - 150px);                /* von der Mitte aus nach links */
-    width: 80px;
-}
- 
-.share-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 24px;
-    background-color: var(--faq-green);
-    color: var(--faq-white);
-    border: none;
-    border-radius: 999px;                   /* ganz runde Enden */
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
- 
-.share-button img {
-    width: 16px;
-    height: 16px;
-}
- 
-.share-button:hover {
-    background-color: var(--faq-text);
-}
-
-/* ---------- Footer ---------- */
-
-.site-footer {
+  position: relative;                     /* der Pfeil richtet sich danach aus */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 20px 200px;
-  background: #68a58a;
-  color: #ffffff;
-  font-size: 0.85rem;
-  padding: 20px max(20px, calc((100% - 1000px) / 2 + 20px));
-}
-
-.footer__left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer__left a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer__social {
-  display: flex;
-  gap: 15px;
-}
-
-.article-footer {
-  margin: 40px 0 40px 200px;
-  max-width: 800px;
+  gap: 16px;
+  padding: 0 20px;
   text-align: center;
 }
 
-/* ---------- Hintergrund weiss ---------- */
-/* Falls der Kopfbereich in einem Wrapper liegt, dessen Klasse hier fehlt:
-   die Klasse des gruenen Elements ergaenzen */
-html,
-body,
-.seite,
-.kopf,
-.hero,
-.kopfbereich,
-.seitenkopf {
-  background: #ffffff;
+.article-footer p {
+  font-weight: 600;
 }
 
-/* ---------- Handy-Ansicht (schmale Bildschirme) ---------- */
-@media (max-width: 600px) {
-  .kopf,
+/* Der geschwungene Pfeil links neben dem Button */
+.share-arrow {
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 150px);                /* von der Mitte aus nach links */
+  width: 80px;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+  background-color: var(--faq-green);
+  color: var(--faq-white);
+  border: none;
+  border-radius: 999px;                   /* ganz runde Enden */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.share-button:hover {
+  background-color: var(--faq-text);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   Reihenfolge: von gross nach klein (max-width)
+   ===================================================== */
+
+/* ---------- Kleiner Desktop / Tablet quer (bis 1100px) ---------- */
+/* Der feste Einzug von 200px frisst hier zu viel Platz */
+@media (max-width: 1100px) {
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
+  .text,
+  .fuss,
   .zwei-spalten {
-    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: none;
+  }
+
+  .kopf {
+    gap: 30px;
   }
 
   .autor {
+    flex: 0 0 220px;
+    margin-right: 40px;
+  }
+}
+
+/* ---------- Tablet hochkant (bis 768px) ---------- */
+@media (max-width: 768px) {
+  /* Header: Text oben, Autorenkarte darunter */
+  .kopf {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .kopf-text {
     flex: none;
     width: 100%;
   }
 
+  /* Autorenkarte: volle Breite, Bild links, Text rechts */
+  .autor {
+    flex: none;
+    width: auto;
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 16px;
+    align-items: center;
+    text-align: left;
+  }
+
+  .autor img,
+  .autor-bild {
+    grid-row: 1 / span 3;
+    margin: 0;
+  }
+
+  .autor-text {
+    grid-column: 2;
+  }
+
+  /* Zwei Spalten untereinander */
+  .zwei-spalten {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .zwei-spalten .bild {
+    margin-top: 12px;
+  }
+
+  /* Grafik Regenperioden: volle Breite */
+  .abschnitt {
+    margin: 30px 40px;
+  }
+
+  .bild-gross {
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  .bild-gross img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ---------- Handy (bis 600px) ---------- */
+@media (max-width: 600px) {
+  .seite {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
+  .text,
+  .fuss,
+  .zwei-spalten {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   h1 {
     font-size: 1.7rem;
+    overflow-wrap: anywhere;
+  }
+
+  .kategorie {
+    font-size: 1rem;
+  }
+
+  .meta {
+    gap: 8px 14px;
+  }
+
+  /* Autorenkarte: wieder zentriert und gestapelt */
+  .autor {
+    display: block;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .autor img,
+  .autor-bild {
+    margin: 0 auto 8px;
+  }
+
+  .abschnitt {
+    margin: 25px 20px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  /* Share-Bereich */
+  .article-footer {
+    margin: 30px auto;
+    gap: 12px;
+  }
+
+  .article-footer p br {
+    display: none;                       
+  }
+
+  .share-arrow {
+    width: 50px;
+    left: calc(50% - 115px);
+  }
+
+  .share-button {
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+}
+
+/* ---------- Sehr kleine Handys (bis 380px) ---------- */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .share-arrow {
+    display: none;                        /* kein Platz neben dem Button */
   }
 }
