@@ -140,6 +140,18 @@
     margin-right: 100px;
 }
 
+/* Radio-Buttons und Punkte braucht man nur auf dem Handy (Slider) */
+.carousel input,
+.carousel__dots {
+    display: none;
+}
+
+/* Die Reihe mit den 5 Bildern */
+.carousel__track {
+    display: flex;
+    justify-content: center;
+}
+
  
 /* Schmaler, eingerückter Teil mit der Liste */
 .article-list {
@@ -244,4 +256,161 @@
  
 .share-button:hover {
     background-color: var(--faq-text);
+}
+
+/* =========================================================
+   Responsive: Tablet und Handy
+   (Desktop über 1024px bleibt genau wie oben)
+   ========================================================= */
+
+/* ---------- Tablet: bis 1024px ---------- */
+@media (max-width: 1024px) {
+
+    /* Karussell: die 5 Bilder teilen sich die Breite, statt rechts rauszuragen */
+    .carousel img {
+        flex: 1 1 0;                /* alle Bilder gleich breit */
+        min-width: 0;               /* dürfen schmaler als 250px werden */
+        width: auto;
+        height: auto;
+        aspect-ratio: 250 / 360;    /* gleiche Form wie auf dem Desktop */
+    }
+
+    .carousel__track {
+        width: 100%;                /* Reihe so breit wie der Artikel */
+    }
+
+    /* Fuß des Artikels: mittig statt 200px nach rechts geschoben */
+    .article-footer {
+        margin: 40px auto;
+    }
+}
+
+/* ---------- Handy: bis 700px ---------- */
+@media (max-width: 700px) {
+
+    /* Header bleibt beim Scrollen oben stehen (wie die Icon-Leiste unten) */
+    body > header {
+        position: sticky;           /* klebt oben, sobald man scrollt */
+        top: 0;
+        z-index: 100;               /* liegt über dem Text und den Bildern */
+    }
+
+    .article {
+        width: 100%;
+        padding: 32px 16px;
+    }
+
+    /* Kopf: Text und Autorin untereinander */
+    .article-header {
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .article-kicker { font-size: 20px; }
+    .article-title  { font-size: 40px; }
+    .article-lead   { font-size: 18px; }
+
+    .article-meta {
+        gap: 12px 20px;
+    }
+
+    /* Autorinnen-Karte: mittig, darf so breit werden wie der Bildschirm */
+    .author {
+        width: 100%;
+        max-width: 340px;
+        align-self: center;
+    }
+
+    .article-heading {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    /* ---------- Karussell als Slider (wie auf der Startseite) ---------- */
+
+    /* Das "Fenster": zeigt immer nur ein Bild, der Rest ist versteckt */
+    .carousel {
+        position: relative;
+        display: block;
+        padding: 0;
+        margin-bottom: 32px;
+        overflow: hidden;
+    }
+
+    /* Alle 5 Bilder in einer langen Reihe (5 x 100% = 500%) */
+    .carousel__track {
+        width: 500%;
+        justify-content: flex-start;
+        transition: transform 0.6s ease;    /* weiches Gleiten */
+    }
+
+    /* Jedes Bild ist genau ein Fünftel der Reihe = so breit wie das Fenster */
+    .carousel img,
+    .carousel img:first-child,
+    .carousel img:hover {
+        flex: 0 0 20%;
+        width: 20%;
+        height: auto;
+        aspect-ratio: auto;               /* Bilder in ihrer echten Form */
+        margin: 0;
+        transform: none;                    /* auf dem Handy nicht schräg */
+        filter: none;
+    }
+
+    /* Je nach gewähltem Punkt die Reihe nach links schieben */
+    #beach1:checked ~ .carousel__track { transform: translateX(0); }
+    #beach2:checked ~ .carousel__track { transform: translateX(-20%); }
+    #beach3:checked ~ .carousel__track { transform: translateX(-40%); }
+    #beach4:checked ~ .carousel__track { transform: translateX(-60%); }
+    #beach5:checked ~ .carousel__track { transform: translateX(-80%); }
+
+    /* Punkte unten in der Mitte */
+    .carousel__dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 12px;        
+    }
+
+    .carousel__dots label {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--faq-white);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: width 0.3s ease, background 0.3s ease;
+    }
+
+    /* Der aktive Punkt: breiter und gelb */
+    #beach1:checked ~ .carousel__dots label:nth-child(1),
+    #beach2:checked ~ .carousel__dots label:nth-child(2),
+    #beach3:checked ~ .carousel__dots label:nth-child(3),
+    #beach4:checked ~ .carousel__dots label:nth-child(4),
+    #beach5:checked ~ .carousel__dots label:nth-child(5) {
+        width: 24px;
+        border-radius: 10px;
+        background: var(--faq-yellow);
+    }
+
+    /* Schild nicht so weit nach links, sonst wird es abgeschnitten */
+    .tips {
+        margin: 64px 0 48px;
+        padding: 24px 16px 16px;
+    }
+
+    .tips-badge {
+        left: -4px;
+        font-size: 16px;
+    }
+
+    /* Fuß: Pfeil ausblenden, er überdeckt sonst den Text */
+    .article-footer {
+        margin: 32px 0;
+    }
+
+    .share-arrow {
+        display: none;
+    }
 }

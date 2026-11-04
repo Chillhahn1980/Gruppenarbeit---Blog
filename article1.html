@@ -75,13 +75,32 @@
             <section class="article-content">
                 <h2 class="article-heading">Die TOP 5 Strände für 2026</h2>
 
-                <!-- Die 5 Bilder, schräg gedreht wie im Design -->
+                <!-- Die 5 Bilder, schräg gedreht wie im Design.
+                     Auf dem Handy werden sie zum Slider wie auf der Startseite:
+                     die Radio-Buttons merken sich, welches Bild gerade zu sehen ist -->
                 <div class="carousel">
-                    <img src="./img/web/carousel02/beach01.png" alt="Meeresschildkröte schwimmt in klarem Wasser">
-                    <img src="./img/web/carousel02/beach02.png" alt="Palmen an einem weißen Sandstrand">
-                    <img src="./img/web/carousel02/beach03.png" alt="Sonnenschirm aus Stroh an einem Sandstrand">
-                    <img src="./img/web/carousel02/beach04.png" alt="Felsen an einem Strand mit türkisfarbenem Wasser">
-                    <img src="./img/web/carousel02/beach05.png" alt="Frau spaziert an einem hellen Strand">
+                    <input type="radio" name="beach" id="beach1" checked>
+                    <input type="radio" name="beach" id="beach2">
+                    <input type="radio" name="beach" id="beach3">
+                    <input type="radio" name="beach" id="beach4">
+                    <input type="radio" name="beach" id="beach5">
+
+                    <div class="carousel__track">
+                        <img src="./img/web/carousel02/beach01.png" alt="Meeresschildkröte schwimmt in klarem Wasser">
+                        <img src="./img/web/carousel02/beach02.png" alt="Palmen an einem weißen Sandstrand">
+                        <img src="./img/web/carousel02/beach03.png" alt="Sonnenschirm aus Stroh an einem Sandstrand">
+                        <img src="./img/web/carousel02/beach04.png" alt="Felsen an einem Strand mit türkisfarbenem Wasser">
+                        <img src="./img/web/carousel02/beach05.png" alt="Frau spaziert an einem hellen Strand">
+                    </div>
+
+                    <!-- Punkte zum Weiterklicken (nur auf dem Handy sichtbar) -->
+                    <div class="carousel__dots">
+                        <label for="beach1" aria-label="Bild 1"></label>
+                        <label for="beach2" aria-label="Bild 2"></label>
+                        <label for="beach3" aria-label="Bild 3"></label>
+                        <label for="beach4" aria-label="Bild 4"></label>
+                        <label for="beach5" aria-label="Bild 5"></label>
+                    </div>
                 </div>
 
                 <p>Es gibt Orte, an denen die Zeit langsamer zu laufen scheint. Man spürt den warmen Sand unter den Füßen, hört nur das Rauschen der Wellen und vergisst für einen Moment alles andere. Auf meinen Reisen habe ich viele Strände gesehen, aber einige davon sind mir besonders im Kopf geblieben. Sie sind nicht nur schön, sondern haben jeder für sich etwas Besonderes: klares Wasser zum Schnorcheln, ruhige Buchten zum Entspannen oder eine Natur, die einen einfach staunen lässt.</p>
@@ -131,24 +150,39 @@
 
     <footer class="site-footer">
         <div class="footer__left">
-            <span>© Reiseblog 2026</span>
-            <a href="#">Impressum</a>
-            <a href="#">Cookie-Einstellungen</a>
+          <span>© Travel Blog 2026</span>
+          <a href="impressum.html">Impressum</a>
+          <a href="#">Cookie Preferences</a>
         </div>
         <div class="footer__social">
-            <a href="#" aria-label="TikTok">
-                <img src="./img/web/Tiktok_icon.png" alt="" width="22" height="22">
-            </a>
-            <a href="#" aria-label="YouTube">
-                <img src="./img/web/youtube.png" alt="" width="22" height="22">
-            </a>
-            <a href="#" aria-label="Facebook">
-                <img src="./img/web/facebook.png" alt="" width="22" height="22">
-            </a>
-            <a href="#" aria-label="Instagram">
-                <img src="./img/web/Instagram.png" alt="" width="22" height="22">
-            </a>
+          <a href="https://www.tiktok.com/@dein_benutzername" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+          <img src="./img/web/Tiktok_icon.png" alt="TikTok" width="22" height="22">
+          </a>
+          <a href="https://www.youtube.com/@dein_kanal" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <img src="./img/web/youtube.png" alt="YouTube" width="22" height="22">
+          </a>
+          <a href="https://www.facebook.com/deine_seite/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <img src="./img/web/facebook.png" alt="Facebook" width="22" height="22">
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <img src="./img/web/Instagram.png" alt="Instagram" width="22" height="22">
+          </a>
         </div>
     </footer>
+    <!-- Mobile Navigation: Icon-Leiste unten, nur auf dem Handy sichtbar (CSS in style.css) -->
+    <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+        <a href="index.html" aria-label="Startseite">
+            <img src="./assets/icon/Home.png" alt="Startseite">
+        </a>
+        <a href="index.html#Highlights" aria-label="Highlights">
+            <img src="./assets/icon/rocket_launch.png" alt="Highlights">
+        </a>
+        <a href="index.html#FAQ" aria-label="FAQ">
+            <img src="./assets/icon/live_help.png" alt="Fragen">
+        </a>
+        <a href="index.html#Contact" aria-label="Kontakt">
+            <img src="./assets/icon/person.png" alt="">
+        </a>
+    </nav>
 </body>
 </html>
