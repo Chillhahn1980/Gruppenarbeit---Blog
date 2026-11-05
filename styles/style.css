@@ -918,7 +918,7 @@ img {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items: center;
   padding: 20px 150px;
   min-height: 128px;
   background: #4EA487;
