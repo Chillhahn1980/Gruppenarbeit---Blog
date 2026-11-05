@@ -129,7 +129,7 @@ h1 {
 /* ---------- Textabschnitte ---------- */
 .text p {
   margin: 0 0 12px;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .text {
@@ -259,14 +259,24 @@ h1,
   position: relative;                     /* der Pfeil richtet sich danach aus */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding: 0 20px;
+  gap: 24px;
+  width: 100%;
+  padding: 18px 40px;
   text-align: center;
 }
 
 .article-footer p {
   font-weight: 600;
+}
+
+.footer__left,
+.footer__social {
+  display: flex;
+  align-items: center;
+  padding: 18px 40px;
+  gap: 24px;
 }
 
 /* Der geschwungene Pfeil links neben dem Button */
