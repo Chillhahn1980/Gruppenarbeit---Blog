@@ -504,7 +504,7 @@ h1,
 }
 
 /* ---------- Mobil: Social Icons unter die Links ---------- */
-@media (max-width: 380px) {
+@media (max-width: 700px) {
   .icon-bar {
     padding: 28px 8px;
     display: flex;
@@ -562,8 +562,8 @@ h1,
   }
 }
 
-/* ---------- Ab 381px ausblenden ---------- */
-@media screen and (min-width: 381px) {
+/* ---------- Ab 701px ausblenden ---------- */
+@media screen and (min-width: 701px) {
   .icon-bar {
     display: none !important;
   }
