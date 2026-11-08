@@ -242,7 +242,7 @@
 
 .slide {
   position: relative;
-  width: 25%;
+  width: 50%;  /*geändert von 25%*/
   height: 100%;
   /* Bild pro Slide: wird in der index.html per --img gesetzt */
   background:
@@ -255,7 +255,7 @@
   position: absolute;
   top: 50px;              
   left: 96px;
-  right: 254px;           /* größerer Wert = schmalerer Kasten */
+  right: 50%;           /* 254px; größerer Wert = schmalerer Kasten */
   padding: 8px 12px 10px;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.28);
