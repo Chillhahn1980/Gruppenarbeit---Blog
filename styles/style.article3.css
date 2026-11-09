@@ -1,213 +1,213 @@
 /* ---------- Grundeinstellungen ---------- */
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 
 body {
-  margin: 0;
-  background: #ffffff;
-  color: #444444;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+margin: 0;
+background: #ffffff;
+color: #444444;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
 }
 
 
 .seite {
-  max-width: none;
-  margin: 0;
-  padding: 0 0 10px;
-  margin-top: 24px;
-  padding-top: 24px;
+max-width: none;
+margin: 0;
+padding: 0 0 10px;
+margin-top: 24px;
+padding-top: 24px;
 }
 
 /* ---------- Kopfbereich ---------- */
 .kategorie {
-  margin: 0 0 5px;
-  color: #3a9a8c;
-  font-size: 1.1rem;
-  font-weight: bold;
+margin: 0 0 5px;
+color: #3a9a8c;
+font-size: 1.1rem;
+font-weight: bold;
 }
 
 h1 {
-  margin: 0 0 15px;
-  color: #f2c14e;
-  font-family: Georgia, serif;
-  font-size: 64px;
-  line-height: 1.2;
+margin: 0 0 15px;
+color: #f2c14e;
+font-family: Georgia, serif;
+font-size: 64px;
+line-height: 1.2;
 }
 
 .einleitung {
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 /* Infozeile unter dem Titel */
 .meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #3a9a8c;
-  font-size: 0.8rem;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+margin: 0;
+padding: 0;
+list-style: none;
+color: #3a9a8c;
+font-size: 0.8rem;
 }
 
 /* Kopfbereich: überschreibt die globale header-Regel */
 .kopf {
-  width: auto;
-  min-height: 0;
-  background: #ffffff;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 30px;
+width: auto;
+min-height: 0;
+background: #ffffff;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 40px;
+margin-bottom: 30px;
 }
 
 .kopf-text {
-  flex: 1;
-  min-width: 0;
+flex: 1;
+min-width: 0;
 }
 
 /* Zwei Spalten faellen die volle Breite */
 .zwei-spalten {
-  display: flex;
-  gap: 30px;
+display: flex;
+gap: 30px;
 }
 
 .zwei-spalten .spalte {
-  flex: 1 1 0;
+flex: 1 1 0;
 }
 
 .zwei-spalten .bild {
-  width: 100%;
-  min-height: 0;
+width: 100%;
+min-height: 0;
 }
 
 /* Share-Bereich mittig */
 .article-footer {
-  margin: 40px auto;
+margin: 40px auto;
 }
 
 /* ---------- Autorenkarte ---------- */
 .autor {
-  flex: 0 0 200px;
-  margin-left: 0;
-  margin-right: 40px;
-  padding: 15px;
-  background: #d9ebe6;
-  border-radius: 12px;
-  text-align: center;
-  font-size: 0.75rem;
+flex: 0 0 200px;
+margin-left: 0;
+margin-right: 40px;
+padding: 15px;
+background: #d9ebe6;
+border-radius: 12px;
+text-align: center;
+font-size: 0.75rem;
 }
 
 .autor img,
 .autor-bild {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 8px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
+width: 70px;
+height: 70px;
+margin: 0 auto 8px;
+border-radius: 50%;
+object-fit: cover;
+display: block;
 }
 
 .autor-name {
-  margin: 0;
-  font-weight: bold;
+margin: 0;
+font-weight: bold;
 }
 
 .autor-rolle {
-  margin: 0 0 8px;
-  color: #3a9a8c;
+margin: 0 0 8px;
+color: #3a9a8c;
 }
 
 .autor-text {
-  margin: 0;
+margin: 0;
 }
 
 /* ---------- Textabschnitte ---------- */
 .text p {
-  margin: 0 0 12px;
-  font-size: 14px;
+margin: 0 0 12px;
+font-size: 14px;
 }
 
 .text {
-  margin: 24px 0;
+margin: 24px 0;
 }
 
 /* ---------- Ãœberschriften der Abschnitte ---------- */
 h2 {
-  margin: 0 0 12px;
-  font-family: Georgia, serif;
-  font-size: 1.2rem;
-  text-align: center;
+margin: 0 0 12px;
+font-family: Georgia, serif;
+font-size: 1.2rem;
+text-align: center;
 }
 
 .abschnitt {
-  margin: 35px 0;
+margin: 35px 0;
 }
 
 .bild {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-  background: #f4f8f7;
-  border: 2px dashed #3a9a8c;
-  border-radius: 16px;
-  color: #3a9a8c;
-  font-size: 0.9rem;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 200px;
+background: #f4f8f7;
+border: 2px dashed #3a9a8c;
+border-radius: 16px;
+color: #3a9a8c;
+font-size: 0.9rem;
 }
 
 .bild-gross {
-  max-width: 480px;
-  min-height: 260px;
-  margin: 0 auto;
+max-width: 480px;
+min-height: 260px;
+margin: 0 auto;
 }
 
 .bild img,
 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
+max-width: 100%;
+height: auto;
+border-radius: 16px;
 }
 
 /* ---------- Zwei Spalten ---------- */
 .zwei-spalten {
-  display: flex;
-  gap: 30px;
-  margin: 35px 0;
+display: flex;
+gap: 30px;
+margin: 35px 0;
 }
 
 .spalte {
-  flex: 1;
+flex: 1;
 }
 
 .spalte p {
-  font-size: 0.85rem;
+font-size: 0.85rem;
 }
 
 /* ---------- Fussbereich ---------- */
 .fuss {
-  margin-top: 40px;
-  text-align: end;
-  color: #3a9a8c;
-  font-size: 0.85rem;
+margin-top: 40px;
+text-align: end;
+color: #3a9a8c;
+font-size: 0.85rem;
 }
 
 .knopf {
-  display: inline-block;
-  padding: 8px 28px;
-  background: #3a9a8c;
-  border-radius: 20px;
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
+display: inline-block;
+padding: 8px 28px;
+background: #3a9a8c;
+border-radius: 20px;
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
 }
 
 .knopf:hover {
-  background: #2d7a6f;
+background: #2d7a6f;
 }
 
 /* ---------- Content nach links, Text bleibt an alter Position ---------- */
@@ -218,428 +218,428 @@ h1,
 .meta,
 .text,
 .fuss {
-  margin-left: 200px;
-  max-width: 800px;
+margin-left: 200px;
+max-width: 800px;
 }
 
 /* ---------- Zwei Bilder unten: kleiner und am Text ausgerichtet ---------- */
 .zwei-spalten {
-  display: flex;
-  align-items: stretch;      /* beide Spalten gleich hoch */
-  gap: 30px;
-  margin: 35px 0;
+display: flex;
+align-items: stretch; /* beide Spalten gleich hoch */
+gap: 30px;
+margin: 35px 0;
 }
 
 .zwei-spalten .spalte {
-  flex: 1 1 0;               /* beide Spalten teilen sich die Textbreite */
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
+flex: 1 1 0; /* beide Spalten teilen sich die Textbreite */
+display: flex;
+flex-direction: column;
+min-width: 0;
 }
 
 /* Bild immer unten, egal wie lang der Text ist */
 .zwei-spalten .bild {
-  margin-top: auto;
-  width: 100%;
-  align-content: center;
-  max-width: none;
-  min-height: 0;
+margin-top: auto;
+width: 100%;
+align-content: center;
+max-width: none;
+min-height: 0;
 }
 
 /* war vorher "text," ohne Punkt, dadurch wirkungslos */
 .text,
 .zwei-spalten {
-  margin-left: 200px;
-  max-width: 800px;
+margin-left: 200px;
+max-width: 800px;
 }
 
 
 /* ---------- Footer: Text, Pfeil und Share-Button ---------- */
 .article-footer {
-  position: relative;                     /* der Pfeil richtet sich danach aus */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  width: 100%;
-  padding: 18px 40px;
-  text-align: center;
+position: relative; /* der Pfeil richtet sich danach aus */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 24px;
+width: 100%;
+padding: 18px 40px;
+text-align: center;
 }
 
 .article-footer p {
-  font-weight: 600;
+font-weight: 600;
 }
 
 .footer__left,
 .footer__social {
-  display: flex;
-  align-items: center;
-  padding: 18px 40px;
-  gap: 24px;
+display: flex;
+align-items: center;
+padding: 18px 40px;
+gap: 24px;
 }
 
 /* Der geschwungene Pfeil links neben dem Button */
 .share-arrow {
-  position: absolute;
-  bottom: -5px;
-  left: calc(50% - 150px);                /* von der Mitte aus nach links */
-  width: 80px;
+position: absolute;
+bottom: -5px;
+left: calc(50% - 150px); /* von der Mitte aus nach links */
+width: 80px;
 }
 
 .share-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 24px;
-  background-color: var(--faq-green);
-  color: var(--faq-white);
-  border: none;
-  border-radius: 999px;                   /* ganz runde Enden */
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 8px 24px;
+background-color: var(--faq-green);
+color: var(--faq-white);
+border: none;
+border-radius: 999px; /* ganz runde Enden */
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 .share-button img {
-  width: 16px;
-  height: 16px;
+width: 16px;
+height: 16px;
 }
 
 .share-button:hover {
-  background-color: var(--faq-text);
+background-color: var(--faq-text);
 }
 
 
 /* =====================================================
-   RESPONSIVE
-   Reihenfolge: von gross nach klein (max-width)
-   ===================================================== */
+RESPONSIVE
+Reihenfolge: von gross nach klein (max-width)
+===================================================== */
 
 /* ---------- Kleiner Desktop / Tablet quer (bis 1100px) ---------- */
 /* Der feste Einzug von 200px frisst hier zu viel Platz */
 @media (max-width: 1100px) {
-  .kategorie,
-  h1,
-  .einleitung,
-  .meta,
-  .text,
-  .fuss,
-  .zwei-spalten {
-    margin-left: 40px;
-    margin-right: 40px;
-    max-width: none;
-  }
+.kategorie,
+h1,
+.einleitung,
+.meta,
+.text,
+.fuss,
+.zwei-spalten {
+margin-left: 40px;
+margin-right: 40px;
+max-width: none;
+}
 
-  .kopf {
-    gap: 30px;
-  }
+.kopf {
+gap: 30px;
+}
 
-  .autor {
-    flex: 0 0 220px;
-    margin-right: 40px;
-  }
+.autor {
+flex: 0 0 220px;
+margin-right: 40px;
+}
 }
 
 /* ---------- Tablet hochkant (bis 768px) ---------- */
 @media (max-width: 768px) {
-  /* Header: Text oben, Autorenkarte darunter */
-  .kopf {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
-  }
+/* Header: Text oben, Autorenkarte darunter */
+.kopf {
+flex-direction: column;
+align-items: stretch;
+gap: 24px;
+}
 
-  .kopf-text {
-    flex: none;
-    width: 100%;
-  }
+.kopf-text {
+flex: none;
+width: 100%;
+}
 
-  /* Autorenkarte: volle Breite, Bild links, Text rechts */
-  .autor {
-    flex: none;
-    width: auto;
-    margin: 0 40px;
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    column-gap: 16px;
-    align-items: center;
-    text-align: left;
-  }
+/* Autorenkarte: volle Breite, Bild links, Text rechts */
+.autor {
+flex: none;
+width: auto;
+margin: 0 40px;
+display: grid;
+grid-template-columns: 70px 1fr;
+column-gap: 16px;
+align-items: center;
+text-align: left;
+}
 
-  .autor img,
-  .autor-bild {
-    grid-row: 1 / span 3;
-    margin: 0;
-  }
+.autor img,
+.autor-bild {
+grid-row: 1 / span 3;
+margin: 0;
+}
 
-  .autor-text {
-    grid-column: 2;
-  }
+.autor-text {
+grid-column: 2;
+}
 
-  /* Zwei Spalten untereinander */
-  .zwei-spalten {
-    flex-direction: column;
-    gap: 35px;
-  }
+/* Zwei Spalten untereinander */
+.zwei-spalten {
+flex-direction: column;
+gap: 35px;
+}
 
-  .zwei-spalten .bild {
-    margin-top: 12px;
-  }
+.zwei-spalten .bild {
+margin-top: 12px;
+}
 
-  /* Grafik Regenperioden: volle Breite */
-  .abschnitt {
-    margin: 30px 40px;
-  }
+/* Grafik Regenperioden: volle Breite */
+.abschnitt {
+margin: 30px 40px;
+}
 
-  .bild-gross {
-    max-width: 100%;
-    min-height: 0;
-  }
+.bild-gross {
+max-width: 100%;
+min-height: 0;
+}
 
-  .bild-gross img {
-    display: block;
-    width: 100%;
-  }
+.bild-gross img {
+display: block;
+width: 100%;
+}
 }
 
 /* ---------- Handy (bis 600px) ---------- */
 @media (max-width: 600px) {
-  .seite {
-    margin-top: 12px;
-    padding-top: 12px;
-  }
+.seite {
+margin-top: 12px;
+padding-top: 12px;
+}
 
-  .kategorie,
-  h1,
-  .einleitung,
-  .meta,
-  .text,
-  .fuss,
-  .zwei-spalten {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+.kategorie,
+h1,
+.einleitung,
+.meta,
+.text,
+.fuss,
+.zwei-spalten {
+margin-left: 20px;
+margin-right: 20px;
+}
 
-  h1 {
-    font-size: 1.7rem;
-    overflow-wrap: anywhere;
-  }
+h1 {
+font-size: 1.7rem;
+overflow-wrap: anywhere;
+}
 
-  .kategorie {
-    font-size: 1rem;
-  }
+.kategorie {
+font-size: 1rem;
+}
 
-  .meta {
-    gap: 8px 14px;
-  }
+.meta {
+gap: 8px 14px;
+}
 
-  /* Autorenkarte: wieder zentriert und gestapelt */
-  .autor {
-    display: block;
-    margin: 0 20px;
-    text-align: center;
-  }
+/* Autorenkarte: wieder zentriert und gestapelt */
+.autor {
+display: block;
+margin: 0 20px;
+text-align: center;
+}
 
-  .autor img,
-  .autor-bild {
-    margin: 0 auto 8px;
-  }
+.autor img,
+.autor-bild {
+margin: 0 auto 8px;
+}
 
-  .abschnitt {
-    margin: 25px 20px;
-  }
+.abschnitt {
+margin: 25px 20px;
+}
 
-  h2 {
-    font-size: 1.1rem;
-  }
+h2 {
+font-size: 1.1rem;
+}
 
-  /* Share-Bereich */
-  .article-footer {
-    margin: 30px auto;
-    gap: 12px;
-  }
+/* Share-Bereich */
+.article-footer {
+margin: 30px auto;
+gap: 12px;
+}
 
-  .article-footer p br {
-    display: none;                       
-  }
+.article-footer p br {
+display: none;
+}
 
-  .share-arrow {
-    width: 50px;
-    left: calc(50% - 115px);
-  }
+.share-arrow {
+width: 50px;
+left: calc(50% - 115px);
+}
 
-  .share-button {
-    font-size: 15px;
-    padding: 8px 20px;
-  }
+.share-button {
+font-size: 15px;
+padding: 8px 20px;
+}
 }
 
 /* ---------- Sehr kleine Handys (bis 380px) ---------- */
 @media (max-width: 380px) {
-  h1 {
-    font-size: 1.5rem;
-  }
+h1 {
+font-size: 1.5rem;
+}
 }
 
 /* ---------- Unterer gelber Navigationsbereich ---------- */
 .footer-nav {
-  background: #F1C953;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 28px 10px;
+background: #F1C953;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 28px 10px;
 }
 
 .footer-nav a {
-  color: #4EA487;
-  font-size: 2.4rem;
-  line-height: 1;
-  transition: transform 0.2s;
+color: #4EA487;
+font-size: 2.4rem;
+line-height: 1;
+transition: transform 0.2s;
 }
 
 .footer-nav a:hover {
-  transform: translateY(-3px);
+transform: translateY(-3px);
 }
 
 /* ---------- Mobil: Social Icons unter die Links ---------- */
 @media (max-width: 700px) {
-  .icon-bar {
-    padding: 28px 8px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items:flex-end;
-  }
+.icon-bar {
+padding: 28px 8px;
+display: flex;
+width: 100%;
+justify-content: space-around;
+align-items:flex-end;
+}
 
-  .footer-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
+.footer-top {
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
 
-  .icon-bar {
-  display: none;
-  }
+.icon-bar {
+display: none;
+}
 }
 
 
 /* ---------- Footer: besonders kleine Bildschirme ---------- */
 @media screen and (max-width: 380px) {
 
-  .footer-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-  }
+.footer-top {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 15px;
+}
 
-  .footer-left {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.footer-left {
+width: 100%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
-  .footer-social {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
+.footer-social {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
 
 }
 
 /* ---------- Icon-Leiste nur auf kleinen Handys anzeigen ---------- */
 @media screen and (max-width: 380px) {
-  .icon-bar {
-    display: flex;
-  }
+.icon-bar {
+display: flex;
+}
 }
 
 /* ---------- Ab 701px ausblenden ---------- */
 @media screen and (min-width: 701px) {
-  .icon-bar {
-    display: none !important;
-  }
+.icon-bar {
+display: none !important;
+}
 }
 
 .icon-bar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: auto;
-  width: 100%;
-  box-sizing: border-box;
-  background: #ecca64;
-  padding: 30px 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: auto;
+width: 100%;
+box-sizing: border-box;
+background: #ecca64;
+padding: 30px 20px;
 }
 
 .icon-bar svg {
-  width: 40px;
-  height: 40px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+width: 40px;
+height: 40px;
+fill: none;
+stroke: currentColor;
+stroke-width: 2;
+stroke-linecap: round;
+stroke-linejoin: round;
 }
 
 .icon-bar a {
-  color: #66a591;
-  line-height: 0;
-  transition: transform .2s, color .2s;
+color: #66a591;
+line-height: 0;
+transition: transform .2s, color .2s;
 }
 
-  .icon-bar svg {
-    width: 36px;                 
-    height: 36px;
-    stroke-width: 2.4;            
-  }
-
-  .icon-bar svg {
-  width: 36px;
-  height: 36px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.icon-bar svg {
+width: 36px;
+height: 36px;
+stroke-width: 2.4;
 }
 
-  .footer-content {
-    padding: 16px 10px;
-  }
+.icon-bar svg {
+width: 36px;
+height: 36px;
+fill: none;
+stroke: currentColor;
+stroke-width: 2.4;
+stroke-linecap: round;
+stroke-linejoin: round;
+}
 
-  .footer-content p {
-    font-size: 14px;
-    margin: 8px 0;
-  }
+.footer-content {
+padding: 16px 10px;
+}
+
+.footer-content p {
+font-size: 14px;
+margin: 8px 0;
+}
 
 /* ---------- Icon-Leiste über gesamte Bildschirmbreite ---------- */
 .icon-bar {
-  width: 100vw;
-  max-width: none;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+width: 100vw;
+max-width: none;
+margin-left: calc(50% - 50vw);
+margin-right: calc(50% - 50vw);
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
 
-  background: #ecca64;
-  padding: 30px 20px;
-  box-sizing: border-box;
+background: #ecca64;
+padding: 30px 20px;
+box-sizing: border-box;
 }
 
 .site-footer {
-  width: 100%;
-  max-width: none;
-  padding: 0;
-  overflow: visible;
+width: 100%;
+max-width: none;
+padding: 0;
+overflow: visible;
 }
