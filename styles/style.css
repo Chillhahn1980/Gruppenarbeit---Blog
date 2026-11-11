@@ -448,13 +448,21 @@ header {
     gap: 16px;
     margin-bottom: 48px;
     color: var(--faq-green);
-    font-size: 64px;
+    font-size: 52px;
+    font-family: "Arima", sans-serif;
 }
 
-.faq-icon {
+
+
+   .faq-icon {
+    display: block;
     width: 48px;
     height: 48px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 0;
 }
+
 
 /* Ein gelber Balken (Frage + Antwort) */
 .faq-item {
