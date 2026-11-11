@@ -10,9 +10,60 @@ header {
     display: flex;
     padding-left: 140px;
     gap: 102px;
-    display: flex;
+    
     align-items: center;
     justify-content: space-between;
+}
+
+@media (min-width: 1025px) {
+    header.site-header--shared {
+        width: 100%;
+        min-height: 128px;
+        background: #4EA487;
+    }
+
+    header.site-header--shared .navbar {
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 561px;
+        max-width: none;
+        min-height: 72px;
+        margin: 0;
+        padding: 32px 0 0 146px;
+        gap: 102px;
+    }
+
+    header.site-header--shared .logo-img {
+        display: block;
+        width: 72px;
+        height: 72px;
+    }
+
+    header.site-header--shared .navbar ul {
+        display: flex;
+        align-items: center;
+        gap: 72px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    header.site-header--shared .navbar li > a {
+        display: block;
+        color: #F8F5EB;
+        font-family: "Arima", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 0.8;
+        letter-spacing: 0;
+        text-decoration: none;
+    }
+
+    header.site-header--shared .navbar li > a:active {
+        color: #F1C953;
+    }
 }
 
 .logo-img {
@@ -1865,11 +1916,6 @@ nav.mobile-bottom-nav {
     }
 
 }
-
-
-/* ==========================================
-   KLEINE SMARTPHONES BIS 380px
-========================================== */
 
 
 /* ==========================================

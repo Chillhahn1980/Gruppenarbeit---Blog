@@ -529,6 +529,7 @@
 }
 
 .imprint__section h2 {
+  text-align: left;
   margin: 0 0 10px;
   color: #4EA487;
   font-family: "Arima", serif;
@@ -853,5 +854,55 @@
     flex-shrink: 0;
     justify-content: flex-end;
     gap: 8px;
+  }
+}
+
+/* Kompakter Header und Footer im Impressum */
+body > header.site-header-Impressum.site-header--shared {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 128px;
+  margin: 0;
+  padding: 0;
+}
+
+body > main.imprint + footer.site-footer {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 0;
+  padding: 16px 24px;
+}
+
+body > main.imprint + footer.site-footer > p {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  body > header.site-header-Impressum.site-header--shared {
+    min-height: 0;
+  }
+
+  body > header.site-header-Impressum.site-header--shared .navbar {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 80px;
+    margin: 0;
+    padding: 12px 24px;
+    gap: 24px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  body > header.site-header-Impressum.site-header--shared .logo-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  body > header.site-header-Impressum.site-header--shared .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
   }
 }

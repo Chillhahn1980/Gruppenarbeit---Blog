@@ -3,18 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">
   <title>Impressum | Reiseblog</title>
- 
-   <link rel="stylesheet" href="./styles/style.article2.css">
-    
-     
+  <link rel="icon" type="image/png" href="./assets/icon/favicon-16x16.png">
 
-
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/standard.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/header.css">
 </head>
 
 <body>
-  <header class="site-header-Impressum">
+  <header class="site-header-Impressum site-header--shared">
+    <nav class="navbar" aria-label="Hauptnavigation">
+      <a href="./index.html" aria-label="Zur Startseite">
+        <img class="logo-img" src="./assets/icon/logo.png" alt="">
+      </a>
+
+      <ul>
+        <li><a href="./index.html#Highlights">Highlights</a></li>
+        <li><a href="./index.html#FAQ">FAQ</a></li>
+        <li><a href="./index.html#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+ <!-- Gemeinsame Projekt-Styles -->
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/standard.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <!-- Nur für Article 2 -->
+  <link rel="stylesheet" href="./styles/style.article2.css">
+</head>
+
+
+  <header class="site-header-Impressum site-header--shared"></header>
+    <header class="site-header-Impressum site-header--shared"></header>
     <nav class="navbar-Impressum" aria-label="Hauptnavigation">
       <a href="./index.html" class="navbar__home"> Reiseblog</a>
       <a href="./index.html" class="navbar__back">Zurück zur Startseite</a>
