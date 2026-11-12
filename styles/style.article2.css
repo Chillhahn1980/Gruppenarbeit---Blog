@@ -906,3 +906,10 @@ body > main.imprint + footer.site-footer > p {
     gap: 12px 24px;
   }
 }
+body nav.mobile-bottom-nav img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 0;
+}
