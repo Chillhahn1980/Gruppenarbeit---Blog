@@ -2465,3 +2465,10 @@ body nav.mobile-bottom-nav img {
         padding-top: 80px;
     }
 }
+body nav.mobile-bottom-nav img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 0;
+}
