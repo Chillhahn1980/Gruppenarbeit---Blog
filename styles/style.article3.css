@@ -826,3 +826,83 @@ body nav.mobile-bottom-nav img {
     object-fit: contain;
     border-radius: 0;
 }
+
+/* GELBE MOBILE NAVIGATION */
+
+    nav.mobile-bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        box-sizing: border-box;
+        width: 100%;
+        height: 54px;
+        min-height: 54px;
+
+        margin: 0;
+        padding: 5px 12px;
+
+        background: #F1C953;
+        z-index: 1000;
+    }
+
+    nav.mobile-bottom-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        color: #4EA487;
+        font-family: "Segoe UI Symbol", sans-serif;
+        font-size: 25px;
+        line-height: 1;
+        text-decoration: none;
+    }
+
+    nav.mobile-bottom-nav a:hover {
+        color: #327B65;
+    }
+
+    /* PLATZ FÜR DIE FIXIERTE NAVIGATION */
+
+    body {
+        padding-bottom: 54px;
+    }
+
+    .footer__left span {
+        order: 3;
+    }
+
+    .footer__left a:first-of-type {
+        order: 1;
+    }
+
+    .footer__left a:last-of-type {
+        order: 2;
+    }
+
+    .site-footer {
+        min-height: 75px;
+        padding: 12px 10px;
+        align-items: flex-end;
+    }
+
+    .footer__left {
+        gap: 2px;
+    }
+
+    .footer__social {
+        gap: 8px;
+    }
+
+    .footer__social img {
+        width: 18px;
+        height: 18px;
+    }
