@@ -118,6 +118,7 @@ header {
 .hero {
     position: relative;
     max-width: 1440px;
+    margin: 0 auto;
     height: 515px;
     background: url('../img/web/header_photo.png') no-repeat right center / cover;
     overflow-x: clip;
