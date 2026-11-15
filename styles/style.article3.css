@@ -55,6 +55,8 @@ h1 {
 
 /* Kopfbereich: überschreibt die globale header-Regel */
 .kopf {
+  flex-direction: column;
+  gap: 20px;
   width: auto;
   min-height: 0;
   background: #ffffff;
@@ -218,8 +220,188 @@ h1,
 .meta,
 .text,
 .fuss {
-  margin-left: 200px;
+  margin-left: 0px;
   max-width: 800px;
+}
+
+/* ---------- Article 3: eine gemeinsame, mittige Textspalte ---------- */
+.kopf,
+.kategorie,
+h1,
+.einleitung,
+.meta,
+.text,
+.abschnitt,
+.zwei-spalten,
+.article-footer {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kopfbereich in der Spalte: Autorenkarte unter dem Titel */
+.kopf {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+}
+
+./* ---------- Article 3: mittige Spalte, Autorenkarte rechts oben ---------- */
+.text,
+.abschnitt,
+.zwei-spalten,
+.article-footer {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kopfbereich: Titel links, Karte rechts oben */
+/* Kopfbereich: gleiche Spalte wie der Text, Karte rechts oben */
+.kopf {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* gleiche Breite für alle Blöcke, damit die linke Kante fluchtet */
+.abschnitt,
+.article-footer {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text,
+.zwei-spalten {
+  margin-left: 20px;
+  max-width: 800px;
+}
+
+.kopf-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.kopf .kategorie,
+.kopf h1,
+.kopf .einleitung,
+.kopf .meta {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+.autor {
+  flex: 0 0 220px;
+  margin: 0;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
+  .text,
+  .zwei-spalten,
+  .fuss {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+  .text,
+  .zwei-spalten,
+  .article-footer {
+    margin-left: 20;
+    margin-right: 20;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .article-footer {
+    margin-top: 32px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+  .seite {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .kopf {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .autor {
+    flex: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .zwei-spalten {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: clamp(32px, 9vw, 44px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text,
+  .zwei-spalten,
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
+  .fuss {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .seite {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+.abschnitt {
+  text-align: left;
+  padding-left: 0;
+}
+
+.abschnitt h2,
+.abschnitt .bild-gross {
+  width: 100%;
+  max-width: 480px;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Zwei Spalten: Text und Bilder eingerückt */
+@media screen and (min-width: 701px) {
+  .zwei-spalten {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.abschnitt .bild-gross {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* ---------- Zwei Bilder unten: kleiner und am Text ausgerichtet ---------- */
@@ -248,16 +430,82 @@ h1,
   min-height: 0;
 }
 
-/* war vorher "text," ohne Punkt, dadurch wirkungslos */
-.text,
-.zwei-spalten {
-  margin-left: 200px;
-  max-width: 800px;
+/* Absätze leicht eingerückt (nur Desktop) */
+@media screen and (min-width: 701px) {
+  .text p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
+/* ---------- Article 3: Mobil bis 700px ---------- */
+@media screen and (max-width: 700px) {
+
+  .seite {
+    padding: 24px 18px 10px;
+  }
+
+  /* alles untereinander, volle Breite, kein Seitenabstand */
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
+  .text,
+  .zwei-spalten,
+  .abschnitt,
+  .article-footer {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .autor {
+    flex: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .zwei-spalten {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* kleinere Texte */
+  h1 { font-size: clamp(26px, 7vw, 34px); }
+  h2 { font-size: 1.05rem; }
+  .kategorie { font-size: 0.95rem; }
+  .einleitung { font-size: 0.9rem; }
+  .text p,
+  .spalte p { font-size: 13px; line-height: 1.5; }
+  .meta { font-size: 0.75rem; }
+  .article-footer p { font-size: 14px; }
+
+  /* kleinere Bilder */
+  .bild,
+  .bild-gross {
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  .bild img {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .autor-bild {
+    width: 56px;
+    height: 56px;
+  }
+
+  .article-footer {
+    margin: 32px 0;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /* DATENSCHUTZ */
-
     .privacy-consent {
         display: flex;
         align-items: flex-start;
@@ -284,6 +532,54 @@ h1,
     }
 
     /* SENDEN-BUTTON */
+    /* ---------- Fuß: Text, Pfeil und Share-Button ---------- */
+ 
+.article-footer {
+    position: relative;                     /* der Pfeil richtet sich danach aus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+ 
+.article-footer p {
+    font-weight: 600;
+}
+ 
+/* Der geschwungene Pfeil links neben dem Button */
+.share-arrow {
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 170px);                /* von der Mitte aus nach links */
+    width: 80px;
+}
+ 
+.share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    background-color: var(--faq-green);
+    color: var(--faq-white);
+    border: none;
+    border-radius: 999px;                   /* ganz runde Enden */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.share-button img {
+    width: 16px;
+    height: 16px;
+}
+
+    @media screen and (max-width: 700px) {
+    .share-arrow {
+        display: none;
+    }
+}
 
     .contact-form button {
         display: block;
