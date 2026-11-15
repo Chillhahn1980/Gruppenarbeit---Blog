@@ -1767,26 +1767,29 @@ nav.mobile-bottom-nav {
 /* ==========================================
    MOBILE HIGHLIGHTS - FIGMA
    BIS 700px
+   Slider: volle Seitenbreite
 ========================================== */
 
 @media screen and (max-width: 700px) {
 
-    /* HIGHLIGHTS-BEREICH */
+    /* HIGHLIGHTS-BEREICH: kein seitlicher Innenabstand,
+       damit der Slider die volle Breite nutzen kann */
 
     .highlights {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
-        padding: 30px 18px 20px;
+        padding: 30px 0 20px;
         background: #ffffff;
         text-align: center;
     }
 
+    /* Überschrift behält ihren Seitenrand */
     .highlights__header {
         width: 100%;
         min-height: 0;
         margin: 0 0 12px;
-        padding: 0;
+        padding: 0 18px;
         background: transparent;
     }
 
@@ -1821,19 +1824,18 @@ nav.mobile-bottom-nav {
         display: none;
     }
 
-    /* SLIDER-GRÖSSE */
-
+    /* SLIDER-GRÖSSE: volle Breite */
 
     .slider {
         position: relative;
 
         width: 100%;
-        max-width: 340px;
+        max-width: none;
 
-        height: auto;
-        aspect-ratio: 340 / 450;
+        height: clamp(420px, 120vw, 560px);
+        aspect-ratio: auto;
 
-        margin: 0 auto;
+        margin: 0;
         overflow: hidden;
 
         border-radius: 0 48px 0 0;
