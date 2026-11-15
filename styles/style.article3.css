@@ -136,7 +136,7 @@ h1 {
   margin: 24px 0;
 }
 
-/* ---------- Ãœberschriften der Abschnitte ---------- */
+/* ---------- Ueberschriften der Abschnitte ---------- */
 h2 {
   margin: 0 0 12px;
   font-family: Georgia, serif;
@@ -650,3 +650,259 @@ Reihenfolge: von gross nach klein (max-width)
   padding: 0;
   overflow: visible;
 }
+
+/* TEST*/
+   /* Gelbe Icon-Leiste */
+  body.page-article3 nav.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    min-height: 54px;
+    margin: 0;
+    padding: 5px 12px;
+    background: #F1C953;
+  }
+
+  body.page-article3 nav.mobile-bottom-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  body.page-article3 nav.mobile-bottom-nav img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    object-fit: contain;
+  }
+
+  body.page-article3 {
+    padding-bottom: 54px;
+  }
+}
+
+/* Sehr schmale Ansichten */
+@media (max-width: 600px) {
+  .page-article2 .navbar {
+    justify-content: center;
+  }
+
+  .page-article3 .navbar ul {
+    display: none;
+  }
+
+  .page-article3 .logo-img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-article3 .navbar {
+    padding-right: 12px;
+    padding-left: 12px;
+    gap: 8px;
+  }
+
+  .page-article3 .logo-img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .page-article3 .share-arrow {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .page-article3 .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #4EA487;
+    z-index: 10000;
+  }
+
+  body.page-article3 {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 700px) {
+  .page-article3 .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 24px;
+    text-align: left;
+  }
+
+  .page-article3 .footer__left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .page-article3 .footer__social {
+    flex-shrink: 0;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}
+
+/* Kompakter Header und Footer im Impressum */
+body > header.site-header-Impressum.site-header--shared {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 128px;
+  margin: 0;
+  padding: 0;
+}
+
+body > main.imprint + footer.site-footer {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 0;
+  padding: 16px 24px;
+}
+
+body > main.imprint + footer.site-footer > p {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  body > header.site-header-Impressum.site-header--shared {
+    min-height: 0;
+  }
+
+  body > header.site-header-Impressum.site-header--shared .navbar {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 80px;
+    margin: 0;
+    padding: 12px 24px;
+    gap: 24px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  body > header.site-header-Impressum.site-header--shared .logo-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  body > header.site-header-Impressum.site-header--shared .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+  }
+}
+body nav.mobile-bottom-nav img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/* GELBE MOBILE NAVIGATION */
+
+    nav.mobile-bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        box-sizing: border-box;
+        width: 100%;
+        height: 54px;
+        min-height: 54px;
+
+        margin: 0;
+        padding: 5px 12px;
+
+        background: #F1C953;
+        z-index: 1000;
+    }
+
+    nav.mobile-bottom-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        color: #4EA487;
+        font-family: "Segoe UI Symbol", sans-serif;
+        font-size: 25px;
+        line-height: 1;
+        text-decoration: none;
+    }
+
+    nav.mobile-bottom-nav a:hover {
+        color: #327B65;
+    }
+
+    /* PLATZ FÜR DIE FIXIERTE NAVIGATION */
+
+    body {
+        padding-bottom: 54px;
+    }
+
+    .footer__left span {
+        order: 3;
+    }
+
+    .footer__left a:first-of-type {
+        order: 1;
+    }
+
+    .footer__left a:last-of-type {
+        order: 2;
+    }
+
+    .site-footer {
+        min-height: 75px;
+        padding: 12px 10px;
+        align-items: flex-end;
+    }
+
+    .footer__left {
+        gap: 2px;
+    }
+
+    .footer__social {
+        gap: 8px;
+    }
+
+    .footer__social img {
+        width: 18px;
+        height: 18px;
+    }

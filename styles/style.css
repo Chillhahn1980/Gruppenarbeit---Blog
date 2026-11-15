@@ -357,13 +357,19 @@ header {
 
 .slide {
     position: relative;
-    width: 50%;
+    /*width: 50%;*/
     /*geändert von 25%*/
     height: 100%;
     /* Bild pro Slide: wird in der index.html per --img gesetzt */
     background:
         var(--img, none) center / cover no-repeat,
         linear-gradient(to bottom, #5b93d0 0%, #a9cfe9 45%, #39b3c9 62%, #7fd3d8 100%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    aspect-ratio: 660 / 293;
+    overflow: hidden;
+    border-top-right-radius: 60px;
 }
 
 /* Text-Box (Glas-Effekt) */
@@ -378,16 +384,24 @@ header {
     background: rgba(255, 255, 255, 0.28);
     border: 1px solid rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(2px);
+    cursor: pointer;
 }
 
 /* Links in den Slides: klickbar, aber optisch nicht erkennbar */
+/* Links in den Slides: Hand beim Darüberfahren */
 .slide__box a,
 .slide__box a:visited,
 .slide__box a:hover,
 .slide__box a:active {
     color: inherit;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
+}
+
+.slide__box a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
 }
 
 .slide__title {
@@ -957,11 +971,11 @@ h2 {
     margin: 0 auto;
 }
 
-.bild img,
+/*.bild img,
 img {
     max-width: 100%;
     border-radius: 16px;
-}
+}*/
 
 /* Zwei Spalten */
 .zwei-spalten {
@@ -1440,6 +1454,14 @@ nav.mobile-bottom-nav {
         right: 18%;
         padding: 18px;
     }
+
+.slide__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
 
     .slide__title {
         font-size: clamp(20px, 3vw, 30px);
