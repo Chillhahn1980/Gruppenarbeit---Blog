@@ -1375,7 +1375,8 @@ nav.mobile-bottom-nav {
     /* HERO */
 
     .hero {
-        height: 450px;
+        height: 360px;
+        /* = 515px × 0.7, passend zum zoom der Kurve */
     }
 
     .hero-yellow {
@@ -1389,10 +1390,12 @@ nav.mobile-bottom-nav {
     }
 
     .hero-shape {
-        width: 250px;
-        height: 100%;
-        clip-path: none;
-        border-radius: 0 55% 55% 0;
+        /* Originalgröße wie Desktop, damit der clip-path passt,
+           dann mit zoom als Ganzes verkleinert */
+        width: 647px;
+        height: 566px;
+        /* 110% wie Desktop: Kurve darf unten rausragen */
+        zoom: 0.7;
     }
 
     .hero-text {
@@ -1412,10 +1415,13 @@ nav.mobile-bottom-nav {
     }
 
     .badge {
-        top: 60%;
-        left: 42%;
-        width: 115px;
-        height: 115px;
+        /* Desktop-Position (top 300, left 440, 160px) × 0.7 wie die Kurve.
+           Die Kurve beginnt bei max(0, 48% - 453px), weil sie 453px breit ist
+           und am Ende der 48% breiten gelben Fläche sitzt. */
+        top: 210px;
+        left: calc(max(0px, 48% - 453px) + 308px);
+        width: 112px;
+        height: 112px;
         animation: none;
     }
 
