@@ -1375,14 +1375,14 @@ nav.mobile-bottom-nav {
     /* HERO */
 
     .hero {
-        height: 360px;
+        height: 515px;
         /* = 515px × 0.7, passend zum zoom der Kurve */
     }
 
     .hero-yellow {
         width: 48%;
         height: 100%;
-        animation: none;
+        animation: true;
     }
 
     .yellow-fill {
