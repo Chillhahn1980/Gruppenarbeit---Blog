@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 48px 32px;
     color: var(--faq-text);
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.5;
 }
  
@@ -25,14 +25,14 @@
  
 .article-title {
     color: var(--faq-yellow);
-    font-size: 56px;
+    font-size: 64px;
     line-height: 1.15;
 }
  
 .article-lead {
     max-width: 720px;
     margin-top: 16px;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 1.4;
 }
  
@@ -42,7 +42,7 @@
     flex-wrap: wrap;                        /* bricht um, wenn kein Platz ist */
     gap: 8px 32px;
     margin-top: 24px;
-    font-size: 14px;
+    font-size: 16px;
 }
  
 /* Ein Eintrag: Icon + Begriff + Wert nebeneinander */
@@ -103,7 +103,7 @@
 .article-heading {
     margin-bottom: 32px;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
 }
  
 .article-content p {
