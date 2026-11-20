@@ -590,6 +590,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 48px;
 }
 
 .contact-form h2 {
@@ -601,7 +602,8 @@ header {
     gap: 8px;
     color: #4EA487;
     font-family: "Arima", sans-serif;
-    font-size: 48px;
+    font-size: 52px;
+    font-weight: bold;
     line-height: 1.2;
 }
 
@@ -637,7 +639,7 @@ header {
     gap: 4px;
     color: #54370D;
     font-family: "Palanquin", sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -681,6 +683,7 @@ header {
     font-family: "Palanquin", sans-serif;
     font-size: 15px;
     font-weight: 400;
+    padding-bottom: 32px;
 }
 
 .privacy-consent input {
@@ -700,7 +703,7 @@ header {
     background: white;
     color: #737373;
     font-family: "Arima", sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     cursor: pointer;
 }
