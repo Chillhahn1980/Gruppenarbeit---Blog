@@ -377,7 +377,7 @@ header {
     position: absolute;
     top: 50px;
     left: 96px;
-    right: 50%;
+    right: 20%;
     /* 254px; größerer Wert = schmalerer Kasten */
     padding: 8px 12px 10px;
     color: #ffffff;
@@ -409,7 +409,7 @@ header {
     /* Abstand nach unten zum Slidertext */
     font-family: "Palanquin Dark", system-ui, sans-serif;
     font-weight: 600;
-    font-size: 2.15rem;
+    font-size: 48px;
     line-height: 1.2;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
