@@ -239,7 +239,7 @@
     align-items: center;
     gap: 8px;
     padding: 8px 24px;
-    background-color: var(--faq-green);
+    background-color: white;
     color: var(--faq-white);
     border: none;
     border-radius: 999px;                   /* ganz runde Enden */

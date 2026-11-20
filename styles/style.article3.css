@@ -1,12 +1,10 @@
-:root {
-  --einzug: 40px;
-  --einzug-inhalt: 20px;
-}
+Christinas Artikel 3:
 
 /* ---------- Grundeinstellungen ---------- */
 * {
   box-sizing: border-box;
 }
+
 
 body {
   margin: 0;
@@ -16,44 +14,16 @@ body {
   line-height: 1.6;
 }
 
+
 .seite {
   max-width: none;
-  margin: 24px 0 0;
-  padding: 24px 0 10px;
-}
-
-/* ---------- Gemeinsame Spalte: alles bündig bei 40px ---------- */
-.kopf,
-.text,
-.abschnitt,
-.zwei-spalten,
-.article-footer {
-  width: calc(100% - var(--einzug));
-  max-width: 1100px;
-  margin-left: var(--einzug);
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0;
+  padding: 0 0 10px;
+  margin-top: 24px;
+  padding-top: 24px;
 }
 
 /* ---------- Kopfbereich ---------- */
-.kopf {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-  min-height: 0;
-  margin-bottom: 30px;
-  background: #ffffff;
-}
-
-.kopf-text {
-  flex: 1;
-  min-width: 0;
-  margin: 0 var(--einzug-inhalt) 0 var(--einzug-inhalt);
-}
-
 .kategorie {
   margin: 0 0 5px;
   color: #3a9a8c;
@@ -65,12 +35,11 @@ h1 {
   margin: 0 0 15px;
   color: #f2c14e;
   font-family: Georgia, serif;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 1.2;
 }
 
 .einleitung {
-  margin: 0 0 15px;
   font-size: 1rem;
 }
 
@@ -86,10 +55,88 @@ h1 {
   font-size: 0.8rem;
 }
 
-/* ---------- Autorenkarte (rechts oben) ---------- */
+/* Kopfbereich: überschreibt die globale header-Regel */
+.kopf {
+  width: auto;
+  min-height: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.kopf-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Zwei Spalten faellen die volle Breite */
+.zwei-spalten {
+  display: flex;
+  gap: 30px;
+}
+
+.zwei-spalten .spalte {
+  flex: 1 1 0;
+}
+
+.zwei-spalten .bild {
+  width: 100%;
+  min-height: 0;
+}
+
+/.article-footer {
+    position: relative;                     /* der Pfeil richtet sich danach aus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+ 
+.article-footer p {
+    font-weight: 600;
+}
+ 
+/* Der geschwungene Pfeil links neben dem Button */
+.share-arrow {
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 170px);                /* von der Mitte aus nach links */
+    width: 80px;
+}
+ 
+.share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    background-color: var(--faq-green);
+    color: var(--faq-white);
+    border: none;
+    border-radius: 999px;                   /* ganz runde Enden */
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.share-button img {
+    width: 32px;
+    height: 32px;
+}
+ 
+.share-button:hover {
+    background-color: var(--faq-text);
+}
+
+/* ---------- Autorenkarte ---------- */
 .autor {
-  flex: 0 0 220px;
-  margin: 0;
+  flex: 0 0 200px;
+  margin-left: 0;
+  margin-right: 40px;
   padding: 15px;
   background: #d9ebe6;
   border-radius: 12px;
@@ -97,13 +144,14 @@ h1 {
   font-size: 0.75rem;
 }
 
+.autor img,
 .autor-bild {
-  display: block;
   width: 70px;
   height: 70px;
   margin: 0 auto 8px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
 }
 
 .autor-name {
@@ -121,18 +169,16 @@ h1 {
 }
 
 /* ---------- Textabschnitte ---------- */
-.text {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
 .text p {
-  margin: 0 var(--einzug-inhalt) 12px var(--einzug-inhalt);
-  max-width: 800px;
+  margin: 0 0 12px;
   font-size: 14px;
 }
 
-/* ---------- Überschriften ---------- */
+.text {
+  margin: 24px 0;
+}
+
+/* ---------- Ãœberschriften der Abschnitte ---------- */
 h2 {
   margin: 0 0 12px;
   font-family: Georgia, serif;
@@ -140,7 +186,10 @@ h2 {
   text-align: center;
 }
 
-/* ---------- Bilder ---------- */
+.abschnitt {
+  margin: 35px 0;
+}
+
 .bild {
   display: flex;
   align-items: center;
@@ -153,105 +202,147 @@ h2 {
   font-size: 0.9rem;
 }
 
-.bild img {
-  display: block;
+.bild-gross {
+  max-width: 480px;
+  min-height: 260px;
+  margin: 0 auto;
+}
+
+.bild img,
+img {
   max-width: 100%;
   height: auto;
   border-radius: 16px;
 }
 
-/* ---------- Abschnitt mit großer Grafik (Regenperioden) ---------- */
-.abschnitt {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-
-/* Überschrift und Rahmen: gleiche Breite, linke Kante bei 40px,
-   Überschrift zentriert = mittig über dem Bild */
-.abschnitt h2,
-.abschnitt .bild-gross {
-  width: 100%;
-  max-width: 480px;
-  margin-left: var(--einzug-inhalt);
-  margin-right: var(--einzug-inhalt);
-}
-
-/* Überschrift: so breit wie der Fließtext (800px), Text darin zentriert */
-.abschnitt h2 {
-  max-width: 800px;
-  text-align: center;
-}
-
-/* Bildrahmen mittig zur Textbreite: Einzug + (800px - 480px) / 2 */
-.abschnitt .bild-gross {
-  margin-left: calc(var(--einzug-inhalt) + 160px);
-}
-
-.bild-gross {
-  min-height: 260px;
-  overflow: hidden;
-}
-
-.bild-gross img {
-  width: 100%;
-  margin: 0;
-}
-
 /* ---------- Zwei Spalten ---------- */
 .zwei-spalten {
   display: flex;
-  align-items: stretch;
   gap: 30px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0;
 }
 
-.zwei-spalten .spalte {
-  margin-left: var(--einzug-inhalt);
-  margin-right: var(--einzug-inhalt);
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.zwei-spalten h2 {
-  text-align: left;
+.spalte {
+  flex: 1;
 }
 
 .spalte p {
   font-size: 0.85rem;
 }
 
-/* Bild immer unten, egal wie lang der Text ist */
-.zwei-spalten .bild {
-  width: 100%;
-  min-height: 0;
-  margin-top: auto;
+/* ---------- Fussbereich ---------- */
+.fuss {
+  margin-top: 40px;
+  text-align: end;
+  color: #3a9a8c;
+  font-size: 0.85rem;
 }
 
-/* ---------- Fuß: Text, Pfeil und Share-Button ---------- */
+.knopf {
+  display: inline-block;
+  padding: 8px 28px;
+  background: #3a9a8c;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.knopf:hover {
+  background: #2d7a6f;
+}
+
+/* ---------- Content nach links, Text bleibt an alter Position ---------- */
+/* Steht bewusst nach den Grundregeln, damit margin-left gewinnt */
+.kategorie,
+h1,
+.einleitung,
+.meta,
+.text,
+.fuss {
+  margin-left: 200px;
+  max-width: 800px;
+}
+
+/* ---------- Zwei Bilder unten: kleiner und am Text ausgerichtet ---------- */
+.zwei-spalten {
+  display: flex;
+  align-items: stretch;
+  /* beide Spalten gleich hoch */
+  gap: 30px;
+  margin: 35px 0;
+}
+
+.zwei-spalten .spalte {
+  flex: 1 1 0;
+  /* beide Spalten teilen sich die Textbreite */
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Bild immer unten, egal wie lang der Text ist */
+.zwei-spalten .bild {
+  margin-top: auto;
+  width: 100%;
+  align-content: center;
+  max-width: none;
+  min-height: 0;
+}
+
+/* war vorher "text," ohne Punkt, dadurch wirkungslos */
+.text,
+.zwei-spalten {
+  margin-left: 200px;
+  max-width: 800px;
+}
+
+
+/* ---------- Footer: Text, Pfeil und Share-Button ---------- */
+.article-footer p {
+  width: min(463px, 100%);
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .article-footer {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
 }
 
-.article-footer p {
-  margin: 0;
-  font-weight: 600;
+.share-arrow {
+  width: 72px;
+  height: auto;
+  position: absolute;
+  left: calc(50% - 145px);
+  top: 4px;
+  pointer-events: none;
 }
 
-/* Geschwungener Pfeil links neben dem Button */
+.share-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.footer__left,
+.footer__social {
+  display: flex;
+  align-items: center;
+  padding: 18px 40px;
+  gap: 24px;
+}
+
+/* Der geschwungene Pfeil links neben dem Button */
 .share-arrow {
   position: absolute;
   bottom: -5px;
-  left: calc(50% - 170px);
+  left: calc(50% - 150px);
+  /* von der Mitte aus nach links */
   width: 80px;
 }
 
@@ -264,6 +355,7 @@ h2 {
   color: var(--faq-white);
   border: none;
   border-radius: 999px;
+  /* ganz runde Enden */
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -275,204 +367,341 @@ h2 {
   height: 16px;
 }
 
-/* =========================================================
-   Mobil bis 700px: kein Einzug, alles untereinander, kleiner
-========================================================= */
-@media screen and (max-width: 700px) {
-  .seite {
-    padding: 24px 18px 10px;
-  }
+.share-button:hover {
+  background-color: var(--faq-text);
+}
 
-  .kopf,
+
+/* =====================================================
+RESPONSIVE
+Reihenfolge: von gross nach klein (max-width)
+===================================================== */
+
+/* ---------- Kleiner Desktop / Tablet quer (bis 1100px) ---------- */
+/* Der feste Einzug von 200px frisst hier zu viel Platz */
+@media (max-width: 1100px) {
+
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
   .text,
-  .abschnitt,
-  .zwei-spalten,
-  .article-footer {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+  .fuss,
+  .zwei-spalten {
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: none;
   }
 
   .kopf {
-    flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   .autor {
+    flex: 0 0 220px;
+    margin-right: 40px;
+  }
+}
+
+/* ---------- Tablet hochkant (bis 768px) ---------- */
+@media (max-width: 768px) {
+
+  /* Header: Text oben, Autorenkarte darunter */
+  .kopf {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .kopf-text {
     flex: none;
     width: 100%;
   }
 
-  .autor-bild {
-    width: 56px;
-    height: 56px;
+  /* Autorenkarte: volle Breite, Bild links, Text rechts */
+  .autor {
+    flex: none;
+    width: auto;
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 16px;
+    align-items: center;
+    text-align: left;
   }
 
+  .autor img,
+  .autor-bild {
+    grid-row: 1 / span 3;
+    margin: 0;
+  }
+
+  .autor-text {
+    grid-column: 2;
+  }
+
+  /* Zwei Spalten untereinander */
   .zwei-spalten {
     flex-direction: column;
-    gap: 24px;
+    gap: 35px;
   }
 
-  .abschnitt h2,
-  .abschnitt .bild-gross {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+  .zwei-spalten .bild {
+    margin-top: 12px;
   }
 
-  .kopf-text,
-  .text p,
-  .zwei-spalten .spalte {
-    margin-left: 0;
-    margin-right: 0;
+  /* Grafik Regenperioden: volle Breite */
+  .abschnitt {
+    margin: 30px 40px;
   }
 
-  /* kleinere Texte */
-  h1 { font-size: clamp(26px, 7vw, 34px); }
-  h2 { font-size: 1.05rem; }
-  .kategorie { font-size: 0.95rem; }
-  .einleitung { font-size: 0.9rem; }
-  .text p,
-  .spalte p { font-size: 13px; line-height: 1.5; }
-  .meta { font-size: 0.75rem; }
-  .article-footer p { font-size: 14px; }
-
-  /* kleinere Bilder */
-  .bild,
   .bild-gross {
+    max-width: 100%;
     min-height: 0;
   }
 
-  .bild img {
-    max-width: 85%;
-    margin: 0 auto;
-  }
-
   .bild-gross img {
-    width: 85%;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ---------- Handy (bis 600px) ---------- */
+@media (max-width: 600px) {
+  .seite {
+    margin-top: 12px;
+    padding-top: 12px;
   }
 
+  .kategorie,
+  h1,
+  .einleitung,
+  .meta,
+  .text,
+  .fuss,
+  .zwei-spalten {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    overflow-wrap: anywhere;
+  }
+
+  .kategorie {
+    font-size: 1rem;
+  }
+
+  .meta {
+    gap: 8px 14px;
+  }
+
+  /* Autorenkarte: wieder zentriert und gestapelt */
+  .autor {
+    display: block;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .autor img,
+  .autor-bild {
+    margin: 0 auto 8px;
+  }
+
+  .abschnitt {
+    margin: 25px 20px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  /* Share-Bereich */
   .article-footer {
-    margin: 32px 0;
+    margin: 30px auto;
+    gap: 12px;
+  }
+
+  .article-footer p br {
+    display: none;
   }
 
   .share-arrow {
+    width: 50px;
+    left: calc(50% - 115px);
+  }
+
+  .share-button {
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+}
+
+/* ---------- Sehr kleine Handys (bis 380px) ---------- */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------- Unterer gelber Navigationsbereich ---------- */
+.footer-nav {
+  background: #F1C953;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 28px 10px;
+}
+
+.footer-nav a {
+  color: #4EA487;
+  font-size: 2.4rem;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.footer-nav a:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- Mobil: Social Icons unter die Links ---------- */
+@media (max-width: 700px) {
+  .icon-bar {
+    padding: 28px 8px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .icon-bar {
     display: none;
   }
 }
 
-/* =========================================================
-   Mobil bis 700px: Footer und Navigation
-========================================================= */
-@media screen and (max-width: 700px) {
-  .site-footer {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    gap: 10px;
-    margin: 0;
-    padding: 12px 10px;
-    background: #4EA487;
-    color: #ffffff;
-    font-size: 10px;
-    text-align: left;
-  }
 
-  .footer__left {
+/* ---------- Footer: besonders kleine Bildschirme ---------- */
+@media screen and (max-width: 380px) {
+
+  .footer-top {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2px;
-    min-width: 0;
-  }
-
-  .footer__left a,
-  .footer__left span {
-    color: #ffffff;
-    font-size: 10px;
-    line-height: 1.3;
-    text-decoration: none;
-  }
-
-  .footer__left span { order: 3; }
-  .footer__left a:first-of-type { order: 1; }
-  .footer__left a:last-of-type { order: 2; }
-
-  .footer__social {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    flex-shrink: 0;
-    gap: 8px;
-  }
-
-  .footer__social a {
-    display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 15px;
   }
 
-  .footer__social img {
-    display: block;
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-  }
-
-  /* Platz für die fixierte Navigation */
-  body {
-    padding-bottom: 54px;
-  }
-
-  /* Gelbe mobile Navigation */
-  body nav.mobile-bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-sizing: border-box;
+  .footer-left {
     width: 100%;
-    height: 54px;
-    min-height: 54px;
-    margin: 0;
-    padding: 5px 12px;
-    background-color: #F1C953;
-    z-index: 9999;
-  }
-
-  body nav.mobile-bottom-nav a {
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    color: #4EA487;
-    font-family: "Segoe UI Symbol", sans-serif;
-    font-size: 25px;
-    line-height: 1;
-    text-decoration: none;
   }
 
-  body nav.mobile-bottom-nav a:hover {
-    color: #327B65;
+  .footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+}
+
+/* ---------- Icon-Leiste nur auf kleinen Handys anzeigen ---------- */
+@media screen and (max-width: 380px) {
+  .icon-bar {
+    display: flex;
   }
 }
 
-body nav.mobile-bottom-nav img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  border-radius: 0;
+/* ---------- Ab 701px ausblenden ---------- */
+@media screen and (min-width: 701px) {
+  .icon-bar {
+    display: none !important;
+  }
+}
+
+.icon-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ecca64;
+  padding: 30px 20px;
+}
+
+.icon-bar svg {
+  width: 40px;
+  height: 40px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-bar a {
+  color: #66a591;
+  line-height: 0;
+  transition: transform .2s, color .2s;
+}
+
+.icon-bar svg {
+  width: 36px;
+  height: 36px;
+  stroke-width: 2.4;
+}
+
+.icon-bar svg {
+  width: 36px;
+  height: 36px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-content {
+  padding: 16px 10px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+/* ---------- Icon-Leiste über gesamte Bildschirmbreite ---------- */
+.icon-bar {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: #ecca64;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.site-footer {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  overflow: visible;
 }
