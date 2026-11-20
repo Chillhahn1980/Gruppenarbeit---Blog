@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="assets/icon/favicon-16x16.png">
   <title>Kopenhagen in 3 Tagen - Reiseartikel</title>
-
-  <link rel="icon" type="image/x-icon" href="./assets/icon/logo_favicon.png">
 
   <!-- Gemeinsame Projekt-Styles -->
   <link rel="stylesheet" href="./styles/variables.css">
   <link rel="stylesheet" href="./styles/standard.css">
   <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/style.css">
-
+  
   <!-- Nur für Article 2 -->
   <link rel="stylesheet" href="./styles/style.article2.css">
 </head>
 
 <body class="page-article2">
-  <header class="site-header">
-    <nav class="navbar" aria-label="Hauptnavigation">
-      <a href="./index.html" aria-label="Zur Startseite">
-        <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
-      </a>
+  <header class="index-header site-header--shared">
+    <div class="header-container">
+      <nav class="navbar" aria-label="Hauptnavigation">
+            <a href="./index.html" aria-label="Zur Startseite">
+                <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
+            </a>
 
-      <ul>
-        <li><a href="./index.html#Highlights">Highlights</a></li>
-        <li><a href="./index.html#FAQ">FAQ</a></li>
-        <li><a href="./index.html#Contact">Contact</a></li>
-      </ul>
-    </nav>
+            <ul>
+                <li><a href="#Highlights">Highlights</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>    
   </header>
+
 
   <main>
     <article class="article">
@@ -112,7 +114,7 @@
         <figure class="article-video" id="video">
           <a
             class="video-link"
-            href="#video"
+            href="https://www.youtube.com/watch?v=hGcHQll-QDA"
             aria-label="Kopenhagen-Reisevideo ansehen"
           >
             <img
@@ -172,14 +174,13 @@
         </section>
       </section>
 
-      <footer class="article-footer">
+      <div class="article-footer">
   <p>
     Folge mir für mehr Content und teile den Artikel mit deinen Freunden!
   </p>
 
   <img
-    src="./img/web/arrow.png"
-    alt=""
+    src="./img/web/arrow.png" alt="Teilen"
     class="share-arrow">
 
   <div class="share-actions">
@@ -191,7 +192,7 @@
 
       <div class="share-expanded">
         <img
-          src="./assets/icon/share.png"
+          src="./assets/icon/share.svg"
           alt=""
           class="share-expanded__icon">
 
@@ -211,32 +212,35 @@
       </div>
     </details>
   </div>
-</footer>
+</div>
 </article>
 </main>
 
+<!-- Footer -->
 <footer class="site-footer">
-  <div class="footer__left">
-    <span>© Travel Blog 2026</span>
-    <a href="./impressum.html">Impressum</a>
-    <a href="#">Cookie Preferences</a>
-  </div>
-
-  <div class="footer__social">
-    <a href="#" aria-label="TikTok">
-      <img src="./img/web/Tiktok_icon.png" alt="">
-    </a>
-    <a href="#" aria-label="YouTube">
-      <img src="./img/web/youtube.png" alt="">
-    </a>
-    <a href="#" aria-label="Facebook">
-      <img src="./img/web/facebook.png" alt="">
-    </a>
-    <a href="#" aria-label="Instagram">
-      <img src="./img/web/Instagram.png" alt="">
-    </a>
+  <div class="footer__container">  
+    <div class="footer__left">
+        <span>© Travel Blog 2026</span>
+        <a href="impressum.html">Impressum</a>
+        <a href="#">Cookie Preferences</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.tiktok.com/@dein_benutzername" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/Tiktok_icon.png" alt="TikTok" width="32" height="32">
+        </a>
+        <a href="https://www.youtube.com/@dein_kanal" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/youtube.png" alt="YouTube" width="32" height="32">
+        </a>
+        <a href="https://www.facebook.com/deine_seite/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/facebook.png" alt="Facebook" width="32" height="32">
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/Instagram.png" alt="Instagram" width="32" height="32">
+        </a>
+      </div>
   </div>
 </footer>
+
 <nav class="mobile-bottom-nav" aria-label="Seitennavigation">
   <a href="index.html" aria-label="Startseite">
     <img src="./assets/icon/Home.png" alt="Startseite">

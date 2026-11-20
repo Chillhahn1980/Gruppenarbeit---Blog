@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 48px 32px;
     color: var(--faq-text);
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.5;
 }
  
@@ -25,14 +25,14 @@
  
 .article-title {
     color: var(--faq-yellow);
-    font-size: 56px;
+    font-size: 64px;
     line-height: 1.15;
 }
  
 .article-lead {
     max-width: 720px;
     margin-top: 16px;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 1.4;
 }
  
@@ -42,7 +42,7 @@
     flex-wrap: wrap;                        /* bricht um, wenn kein Platz ist */
     gap: 8px 32px;
     margin-top: 24px;
-    font-size: 14px;
+    font-size: 16px;
 }
  
 /* Ein Eintrag: Icon + Begriff + Wert nebeneinander */
@@ -89,11 +89,11 @@
  
 .author-role {
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 18px;
 }
  
 .author-bio {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.4;
     text-align: left;
 }
@@ -103,7 +103,7 @@
 .article-heading {
     margin-bottom: 32px;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
 }
  
 .article-content p {
@@ -218,7 +218,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
     text-align: center;
 }
  
@@ -230,7 +230,7 @@
 .share-arrow {
     position: absolute;
     bottom: -5px;
-    left: calc(50% - 150px);                /* von der Mitte aus nach links */
+    left: calc(50% - 170px);                /* von der Mitte aus nach links */
     width: 80px;
 }
  
@@ -243,15 +243,15 @@
     color: var(--faq-white);
     border: none;
     border-radius: 999px;                   /* ganz runde Enden */
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
  
 .share-button img {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
 }
  
 .share-button:hover {
