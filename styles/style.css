@@ -397,12 +397,15 @@ header {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+    font-size: 28px;
+    font-family: "Palanquin", system-ui, sans-serif;
 }
 
 .slide__box a::after {
     content: "";
     position: absolute;
     inset: 0;
+    
 }
 
 .slide__title {
