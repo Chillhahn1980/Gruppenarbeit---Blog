@@ -17,20 +17,21 @@
 
 <!-- Alles, was man sieht, gehört IN den <body>, auch der <header> -->
 <body>
-    <header class="site-header site-header--shared">
-        <nav class="navbar" aria-label="Hauptnavigation">
-            <a href="./index.html" aria-label="Zur Startseite">
-                <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
-            </a>
+    <header class="index-header site-header--shared">
+        <div class="header-container">
+            <nav class="navbar" aria-label="Hauptnavigation">
+                <a href="./index.html" aria-label="Zur Startseite">
+                    <img class="logo-img" src="./assets/icon/logo.png" alt="Logo">
+                </a>
 
-            <ul>
-                <li><a href="./index.html#Highlights">Highlights</a></li>
-                <li><a href="./index.html#FAQ">FAQ</a></li>
-                <li><a href="./index.html#Contact">Contact</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="#Highlights">Highlights</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>    
     </header>
-
     <main>
 
         <article class="article">
@@ -137,39 +138,41 @@
             </section>
 
             <!-- Fuß des Artikels: Aufruf zum Teilen, mit Pfeil zum Button -->
-            <footer class="article-footer">
+            <div class="article-footer">
                 <p>Folge mir für mehr solche Beiträge und<br>teile den Artikel mit deinen Freunden!</p>
                 <img src="./img/web/arrow.png" alt="" class="share-arrow">
                 <button type="button" class="share-button">
                     <img src="./img/web/icon-share-yellow.png" alt="">
                     Teilen
                 </button>
-            </footer>
+            </div>
 
         </article>
     </main>
 
     <footer class="site-footer">
-        <div class="footer__left">
-          <span>© Travel Blog 2026</span>
-          <a href="impressum.html">Impressum</a>
-          <a href="#">Cookie Preferences</a>
-        </div>
-        <div class="footer__social">
-          <a href="https://www.tiktok.com/@dein_benutzername" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-          <img src="./img/web/Tiktok_icon.png" alt="TikTok" width="22" height="22">
-          </a>
-          <a href="https://www.youtube.com/@dein_kanal" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-          <img src="./img/web/youtube.png" alt="YouTube" width="22" height="22">
-          </a>
-          <a href="https://www.facebook.com/deine_seite/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-          <img src="./img/web/facebook.png" alt="Facebook" width="22" height="22">
-          </a>
-          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <img src="./img/web/Instagram.png" alt="Instagram" width="22" height="22">
-          </a>
-        </div>
-    </footer>
+  <div class="footer__container">  
+    <div class="footer__left">
+        <span>© Travel Blog 2026</span>
+        <a href="impressum.html">Impressum</a>
+        <a href="#">Cookie Preferences</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.tiktok.com/@dein_benutzername" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/Tiktok_icon.png" alt="TikTok" width="32" height="32">
+        </a>
+        <a href="https://www.youtube.com/@dein_kanal" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/youtube.png" alt="YouTube" width="32" height="32">
+        </a>
+        <a href="https://www.facebook.com/deine_seite/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/facebook.png" alt="Facebook" width="32" height="32">
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="./img/web/Instagram.png" alt="Instagram" width="32" height="32">
+        </a>
+      </div>
+  </div>
+</footer>
     <!-- Mobile Navigation: Icon-Leiste unten, nur auf dem Handy sichtbar (CSS in style.css) -->
     <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
         <a href="index.html" aria-label="Startseite">
