@@ -240,7 +240,7 @@
     gap: 8px;
     padding: 8px 24px;
     background-color: #4a9e80;
-    color: var(--faq-white);
+    color: var(--faq-yellow);
     border: none;
     border-radius: 999px;                   /* ganz runde Enden */
     font-size: 24px;
