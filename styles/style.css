@@ -731,76 +731,6 @@ header {
 }
 
 
-
-
-/* Share-Bereich aus Article 1 mit aufklappenden Plattform-Links */
-.article-footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-}
-
-.article-footer>p {
-    margin: 0;
-    font-weight: 600;
-}
-
-.share-actions {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.share-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 24px;
-    border: 0;
-    border-radius: 999px;
-    background: var(--faq-green);
-    color: var(--faq-white);
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.share-button img {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
-}
-
-.share-links {
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 16px);
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-50%);
-    transition: opacity 200ms ease, visibility 200ms ease;
-}
-
-.share-actions:hover .share-links,
-.share-actions:focus-within .share-links {
-    opacity: 1;
-    visibility: visible;
-}
-
-.share-link,
-.share-link:visited {
-    color: var(--faq-green);
-    white-space: nowrap;
-}
-
-
-
 /* Responsives Layout */
 @media (max-width: 800px) {
     .article {
@@ -873,35 +803,6 @@ header {
 
 
 
-/* Artikel 4: Kopfbereich */
-.kopf {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.kategorie {
-    margin: 0 0 5px;
-    color: #3a9a8c;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-h1 {
-    margin: 0 0 15px;
-    color: #f2c14e;
-    font-family: Georgia, serif;
-    font-size: 2.2rem;
-    line-height: 1.2;
-}
-
-.einleitung {
-    margin: 0 0 15px;
-    font-size: 1rem;
-}
-
 /* Infozeile unter dem Titel */
 .meta {
     display: flex;
@@ -912,39 +813,7 @@ h1 {
     list-style: none;
     color: #3a9a8c;
     font-size: 0.8rem;
-}
-
-/* Autorenkarte */
-.autor {
-    flex: 0 0 220px;
-    padding: 15px;
-    background: #d9ebe6;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 0.75rem;
-}
-
-.autor-bild {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 8px;
-    background: #3a9a8c;
-    border-radius: 50%;
-}
-
-.autor-name {
-    margin: 0;
-    font-weight: bold;
-}
-
-.autor-rolle {
-    margin: 0 0 8px;
-    color: #3a9a8c;
-}
-
-.autor-text {
-    margin: 0;
-}
+} */
 
 /* Textabschnitte */
 .text p {
@@ -954,7 +823,7 @@ h1 {
 
 .text {
     margin: 25px 0;
-}
+} */
 
 /* Überschriften der Abschnitte */
 h2 {
