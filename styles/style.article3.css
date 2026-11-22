@@ -224,10 +224,8 @@ h2 {
   margin: 0 auto;
 }
 
-.bild img,
-img {
+.bild img, img {
   max-width: 100%;
-  height: auto;
   border-radius: 8px;
 }
 
@@ -712,11 +710,4 @@ Reihenfolge: von gross nach klein (max-width)
   background: #ecca64;
   padding: 30px 20px;
   box-sizing: border-box;
-}
-
-.site-footer {
-  width: 100%;
-  max-width: none;
-  padding: 0;
-  overflow: visible;
 }
