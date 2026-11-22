@@ -38,7 +38,11 @@ h1 {
 }
 
 .einleitung {
-  font-size: 16px;
+  margin-left: 200px;
+  margin-right: 40px;
+  max-width: none;
+  font-family: "Palanquin", regular;
+  font-size: 24px;
 }
 
 /* Infozeile unter dem Titel */
@@ -65,6 +69,7 @@ h1 {
   margin-bottom: 30px;
   font-size: 16px;
 }
+
 
 .kopf-text {
   flex: 1;
@@ -178,7 +183,7 @@ h1 {
 .text p {
   margin: 0 0 12px;
   font-family: "Palanquin", regular;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .text {
@@ -235,7 +240,7 @@ img {
 }
 
 .spalte p {
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Palaquin", regular;
 }
 
@@ -270,7 +275,7 @@ h1,
 .text,
 .fuss {
   margin-left: 200px;
-  max-width: 900px;
+  max-width: 850px;
 }
 
 /* ---------- Zwei Bilder unten: kleiner und am Text ausgerichtet ---------- */
@@ -392,7 +397,6 @@ Reihenfolge: von gross nach klein (max-width)
 ===================================================== */
 
 /* ---------- Kleiner Desktop / Tablet quer (bis 1100px) ---------- */
-/* Der feste Einzug von 200px frisst hier zu viel Platz */
 @media (max-width: 1100px) {
 
   .kategorie,
