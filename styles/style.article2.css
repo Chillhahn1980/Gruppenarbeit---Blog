@@ -352,45 +352,7 @@
 }
 
 /* Seitenfooter */
-.page-article2 .site-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  width: 100%;
-  padding: 18px 40px;
-  background: #5FA88A;
-  color: #fff;
-  font-size: 14px;
-}
 
-.page-article2 .footer__left,
-.page-article2 .footer__social {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.page-article2 .site-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.page-article2 .site-footer a:hover,
-.page-article2 .site-footer a:focus-visible {
-  text-decoration: underline;
-}
-
-.page-article2 .footer__social {
-  gap: 10px;
-}
-
-.page-article2 .footer__social img {
-  width: 22px;
-  height: 22px;
-  border-radius: 0;
-  object-fit: contain;
-}
 
 .share-details {
   display: block;
