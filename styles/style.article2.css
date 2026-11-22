@@ -121,8 +121,8 @@
 
 .page-article2 .author-img {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto 8px;
   border: 3px solid var(--article-white);
   border-radius: 50%;
@@ -138,13 +138,13 @@
 .page-article2 .author-role {
   margin: 0 0 8px;
   color: var(--article-brown);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .page-article2 .author-bio {
   margin: 0;
   color: var(--article-brown);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.4;
   text-align: left;
 }
@@ -158,7 +158,7 @@
 .page-article2 .article-content > p {
   margin: 0 0 32px;
   color: var(--article-text);
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.5;
 }
 
