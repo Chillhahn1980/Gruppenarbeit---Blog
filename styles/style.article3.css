@@ -184,7 +184,7 @@ h1 {
 .text p {
   margin: 0 0 12px;
   font-family: "Palanquin", regular;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .text {
@@ -195,7 +195,7 @@ h1 {
 h2 {
   margin: 0 0 12px;
   font-family: Arima, semibold;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
 }
@@ -217,8 +217,8 @@ h2 {
 }
 
 .bild-gross {
-  max-width: 480px;
-  min-height: 260px;
+  max-width: 640px;
+  min-height: 436px;
   margin: 0 auto;
 }
 
@@ -241,7 +241,7 @@ img {
 }
 
 .spalte p {
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Palaquin", regular;
 }
 
@@ -322,7 +322,7 @@ h1,
 .article-footer p {
   width: min(463px, 100%);
   margin: 0 0 14px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
@@ -335,12 +335,13 @@ h1,
   align-items: center;
 }
 
+/* Der geschwungene Pfeil links neben dem Button */
 .share-arrow {
   width: 72px;
   height: auto;
   position: absolute;
-  left: calc(50% - 145px);
-  top: 4px;
+  left: calc(50% - 160px);
+  top: 60px;
   pointer-events: none;
 }
 
@@ -357,14 +358,7 @@ h1,
   gap: 24px;
 }
 
-/* Der geschwungene Pfeil links neben dem Button */
-.share-arrow {
-  position: absolute;
-  bottom: -5px;
-  left: calc(50% - 150px);
-  /* von der Mitte aus nach links */
-  width: 80px;
-}
+
 
 .share-button {
   display: flex;
@@ -372,19 +366,19 @@ h1,
   gap: 8px;
   padding: 8px 24px;
   background-color: var(--faq-green);
-  color: var(--faq-white);
+  color: var(--faq-yellow);
   border: none;
   border-radius: 999px;
   /* ganz runde Enden */
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .share-button img {
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
 }
 
 .share-button:hover {
