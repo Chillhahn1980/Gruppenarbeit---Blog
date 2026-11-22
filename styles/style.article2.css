@@ -51,7 +51,7 @@
 .page-article2 .article-kicker {
   margin: 0;
   color: var(--article-green);
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -60,7 +60,7 @@
   margin: 0;
   color: var(--article-yellow);
   font-family: "Arima", serif;
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 1.15;
 }
@@ -69,7 +69,7 @@
   max-width: 720px;
   margin: 16px 0 0;
   color: var(--article-brown);
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1.4;
 }
 
@@ -81,7 +81,7 @@
   margin: 24px 0 0;
   padding: 0;
   color: var(--article-brown);
-  font-size: 14px;
+  font-size: 16px;
   list-style: none;
 }
 
@@ -103,7 +103,7 @@
 
 .page-article2 .article-meta img {
   width: 16px;
-  height: 16px;
+  height: 18px;
   border-radius: 0;
   object-fit: contain;
 }
