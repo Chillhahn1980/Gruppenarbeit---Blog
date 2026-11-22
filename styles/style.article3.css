@@ -145,21 +145,21 @@ h1 {
 
 /* ---------- Autorenkarte ---------- */
 .autor {
-  flex: 0 0 220px;
+  flex: 0 0 272px;
   margin-left: 0;
   margin-right: 40px;
   padding: 15px;
   background: #d9ebe6;
   border-radius: 12px;
   text-align: center;
-  font-size: 0.75rem;      
+        
   margin-right: 220px;    /* schiebt die Karte nach links; Wert nach Bedarf ändern */
 }
 
 .autor img,
 .autor-bild {
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto 8px;
   border-radius: 50%;
   object-fit: cover;
@@ -169,11 +169,13 @@ h1 {
 .autor-name {
   margin: 0;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .autor-rolle {
   margin: 0 0 8px;
   color: #3a9a8c;
+  font-size: 18px;
 }
 
 .autor-text {
@@ -184,7 +186,7 @@ h1 {
 .text p {
   margin: 0 0 12px;
   font-family: "Palanquin", regular;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .text {
