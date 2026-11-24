@@ -50,6 +50,7 @@
 .page-article2 .article-kicker {
   margin: 0;
   color: var(--article-green);
+  font-family: palanquin, sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
@@ -68,6 +69,7 @@
   max-width: 720px;
   margin: 16px 0 0;
   color: var(--article-brown);
+  font-family: "palanquin", sans-serif;
   font-size: 28px;
   line-height: 1.4;
 }
@@ -94,6 +96,8 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  font-size: 16px;
+  font-family: "palanquin", sans-serif;
 }
 
 .page-article2 .article-meta dd {
@@ -164,7 +168,7 @@
 .page-article2 .article-section-title {
   margin: 40px 0 20px;
   color: var(--article-green);
-  font-family: "Arima", serif;
+  font-family: "palanquin", sans-serif;
   font-size: 32px;
   line-height: 1.2;
   text-align: left;
@@ -213,13 +217,19 @@
   transform: translate(-50%, -50%);
 }
 
+.article-section-title p{
+  font-family: "palanquin", sans-serif;
+  font-size: 24px;
+}
+
 /* Tagesliste */
 .page-article2 .article-days {
   margin: 0 auto 48px;
   padding-left: 24px;
   color: var(--article-text);
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.5;
+  font-family: "palanquin", sans-serif;
 }
 
 .page-article2 .article-days li {
@@ -246,6 +256,7 @@
   color: var(--article-text);
   font-size: 24px;
   line-height: 1.2;
+  font-family: "palanquin", sans-serif;
 }
 
 .page-article2 .tips-badge {
@@ -287,7 +298,10 @@
 
 .page-article2 .article-footer > p {
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Arima-Regular", serif;
+  font-size: 24px;
+  color: rgba (84, 55, 13, 1)
 }
 
 .page-article2 .share-arrow {
@@ -392,7 +406,7 @@
 .article-footer p {
   width: min(463px, 100%);
   margin: 0 0 14px;
-  font-family: "Arima", sans-serif;
+  font-family: "palanquin", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
@@ -481,7 +495,7 @@
 .imprint h1 {
   margin: 0 0 32px;
   color: #F1C953;
-  font-family: "Arima", serif;
+  font-family: "Arima", sans-serif;
   font-size: 48px;
   line-height: 1.2;
 }
