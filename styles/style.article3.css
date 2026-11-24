@@ -43,7 +43,9 @@ h1 {
   max-width: none;
   font-family: "Palanquin", regular;
   font-size: 28px;
+  font-weight: 400;
   margin-bottom: 40px;
+  color: #54370D;
 }
 
 /* Infozeile unter dem Titel */
