@@ -24,16 +24,18 @@ body {
 /* ---------- Kopfbereich ---------- */
 .kategorie {
   margin: 0 0 5px;
-  color: #3a9a8c;
+  color: #4EA487;
   font-family: "Palanquin", semibold;
+  font-weight: 600;
   font-size: 40px;
 }
 
 h1 {
   margin: 0 0 15px;
   color: #f2c14e;
-  font-family: Arima, san-serif;
+  font-family: Arima, sans-serif;
   font-size: 64px;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -176,12 +178,16 @@ h1 {
 
 .autor-rolle {
   margin: 0 0 8px;
-  color: #3a9a8c;
+  color: #54370D;
+  font-weight: 400;
   font-size: 18px;
 }
 
 .autor-text {
   margin: 0;
+  font-family: "Palanquin", regular;
+  font-weight: 400;
+  color: #54370D;
 }
 
 /* ---------- Textabschnitte ---------- */
