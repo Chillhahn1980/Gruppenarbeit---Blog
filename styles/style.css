@@ -959,8 +959,11 @@ footer {
 
 .footer__container {
     max-width: 1440px;
-    display: contents;
+    display: flex;
     justify-content: space-between;
+    margin-inline: auto;
+    padding: 50px 10px 0px 10px;
+
 }
 
 .site-footer {
