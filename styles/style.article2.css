@@ -165,7 +165,7 @@
   line-height: 1.5;
 }
 
-.page-article2 .article-section-title {
+.page-article2  {
   margin: 40px 0 20px;
   color: var(--article-green);
   font-family: "palanquin", sans-serif;
@@ -215,6 +215,16 @@
   font-size: 42px;
   line-height: 1;
   transform: translate(-50%, -50%);
+}
+
+.article-section-title{
+  
+  margin: 40px 0 20px;
+  color: rgba(81, 61, 61, 1);
+  font-family: "palanquin", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .article-section-title p{
