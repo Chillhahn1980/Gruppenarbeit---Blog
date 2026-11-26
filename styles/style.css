@@ -962,6 +962,7 @@ img {
 
 /* Innen: Inhalt auf 1200px begrenzt und mittig */
 .footer__container {
+    width: 100%;                      /* volle Breite, wenn der Footer selbst flex ist (Handy) */
     max-width: 1200px;
     margin-inline: auto;
     padding: 30px 20px;               /* kleiner Rand bei schmalen Bildschirmen */
@@ -1397,6 +1398,13 @@ nav.mobile-bottom-nav {
 
     .site-footer {
         padding: 25px 40px;
+    }
+
+    /* Tablet: seitlichen Rand macht schon .site-footer, kleinerer Abstand,
+       damit Links und Icons in einer Zeile bleiben */
+    .footer__container {
+        padding: 20px 0;
+        column-gap: 40px;
     }
 }
 
@@ -2297,6 +2305,11 @@ body nav.mobile-bottom-nav img {
         min-height: 75px;
         padding: 12px 10px;
         align-items: flex-end;
+    }
+
+    /* Handy: gleicher Innenabstand wie vorher */
+    .footer__container {
+        padding: 50px 10px 0 10px;
     }
 
     .footer__left {
