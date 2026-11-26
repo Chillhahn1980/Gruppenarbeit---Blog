@@ -329,6 +329,7 @@ h1,
 
 
 /* ---------- Footer: Text, Pfeil und Share-Button ---------- */
+/* ---------- Footer: Abstand zwischen linker und rechter Seite ---------- */
 .article-footer p {
   width: min(463px, 100%);
   margin: 0 0 14px;

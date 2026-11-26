@@ -950,6 +950,16 @@ img {
 
 
 /* ---------- Footer ---------- */
+/* ---------- Footer: Abstand zwischen linker und rechter Seite ---------- */
+.site-footer .footer__container {
+  display: flex;
+  flex-wrap: wrap;                  /* bricht bei wenig Platz um */
+  justify-content: space-between;   /* schiebt beide Seiten nach aussen */
+  align-items: center;
+  column-gap: 120px;                /* Mindestabstand, Wert nach Bedarf ändern */
+  row-gap: 20px;
+  width: 100%;
+}
 
 footer {
     width: 100%;
