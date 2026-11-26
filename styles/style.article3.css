@@ -395,6 +395,40 @@ h1,
   background-color: var(--faq-text);
 }
 
+/* =====================================================
+   CONTENTBEGRENZUNG 1200px
+   Muss am Ende der Datei stehen
+   ===================================================== */
+main.seite {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;      /* zentriert den Content */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Alte seitliche Abstände aufheben, damit alles bündig ist */
+.seite .kategorie,
+.seite h1,
+.seite .einleitung,
+.seite .meta,
+.seite .text,
+.seite .fuss,
+.seite .zwei-spalten,
+.seite .abschnitt,
+.seite .autor {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+}
+
+@media (max-width: 600px) {
+  main.seite {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 /* =====================================================
 RESPONSIVE
