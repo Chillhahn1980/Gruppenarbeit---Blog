@@ -958,6 +958,7 @@ img {
     color: #ffffff;
     font-size: 16px;
     padding: 20px 0;                  /* kein seitliches Padding, das macht der Container */
+    line-height: normal;              /* gleich hoch auf allen Seiten */
 }
 
 /* Innen: Inhalt auf 1200px begrenzt und mittig */

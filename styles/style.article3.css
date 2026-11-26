@@ -361,13 +361,6 @@ h1,
   z-index: 1;
 }
 
-.footer__left,
-.footer__social {
-  display: flex;
-  align-items: center;
-  padding: 18px 40px;
-  gap: 24px;
-}
 
 
 
@@ -633,47 +626,11 @@ Reihenfolge: von gross nach klein (max-width)
     align-items: flex-end;
   }
 
-  .footer-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
   .icon-bar {
     display: none;
   }
 }
 
-
-/* ---------- Footer: besonders kleine Bildschirme ---------- */
-@media screen and (max-width: 380px) {
-
-  .footer-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .footer-left {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-social {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-
-}
 
 /* ---------- Icon-Leiste nur auf kleinen Handys anzeigen ---------- */
 @media screen and (max-width: 380px) {
