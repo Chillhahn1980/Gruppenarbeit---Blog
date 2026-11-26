@@ -1274,6 +1274,14 @@ nav.mobile-bottom-nav {
         gap: 25px;
     }
 
+    /* Menü-Schrift wie am Desktop: groß und fett, bis das Menü ab 700px verschwindet */
+    .navbar li > a {
+        font-family: "Arima", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 0.8;
+    }
+
     /* HERO */
 
     
