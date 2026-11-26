@@ -950,39 +950,26 @@ img {
 
 
 /* ---------- Footer ---------- */
-/* ---------- Footer: Abstand zwischen linker und rechter Seite ---------- */
-.site-footer .footer__container {
-  display: flex;
-  flex-wrap: wrap;                  /* bricht bei wenig Platz um */
-  justify-content: space-between;   /* schiebt beide Seiten nach aussen */
-  align-items: center;
-  column-gap: 120px;                /* Mindestabstand, Wert nach Bedarf ändern */
-  row-gap: 20px;
-  width: 100%;
-}
-
-footer {
+/* Außen: grüne Fläche über die volle Breite */
+.site-footer {
     width: 100%;
     min-height: 128px;
     background: #4EA487;
-}
-
-.footer__container {
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    margin-inline: auto;
-    padding: 50px 10px 0px 10px;
-
-}
-
-.site-footer {
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 150px;
     color: #ffffff;
     font-size: 16px;
+    padding: 20px 0;                  /* kein seitliches Padding, das macht der Container */
+}
+
+/* Innen: Inhalt auf 1200px begrenzt und mittig */
+.footer__container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 30px 20px;               /* kleiner Rand bei schmalen Bildschirmen */
+    display: flex;
+    flex-wrap: wrap;                  /* bricht bei wenig Platz um */
+    justify-content: space-between;   /* schiebt beide Seiten nach aussen */
+    align-items: center;
+    gap: 20px 120px;                  /* Zeilen- und Spaltenabstand */
 }
 
 .footer__left {
